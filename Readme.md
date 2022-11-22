@@ -1,7 +1,7 @@
 # Личный проект «Мишка» 
 
 * Студент: [Никита Урбанович](https://up.htmlacademy.ru/adaptive/27/user/410715).
-* Наставник: `Неизвестно`.
+* Наставник: [Алексей Хабиров](https://htmlacademy.ru/profile/alex_khab).
 
 ---
 
