@@ -5,8 +5,94 @@
     <title>HTML Academy: Мишка</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
-
+    <!-- Шапка сайта -->
+    <header class="header">
+      <a class="header__logo">
+        <img src="./img/logo/logo-mobile.svg" width="86" height="35" alt="Барбершоп «Бородинский».">
+      </a>
+      <nav class="navigation">
+        <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <ul class="navigation__list site-list">
+          <li class="site-list__item">
+            <a href="#">Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Вязание на заказ</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Новые постепления</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Распродажа</a>
+          </li>
+        </ul>
+        <ul class="navigation__list secondary-list">
+          <li class="secondary-list__item secondary-list__item-search">
+            <a href="#">
+              <img src="./img/header/search.svg" width="18" height="18" alt="Поиск.">
+              <span>Поиск по сайту</span>
+            </a>
+          </li>
+          <li class="secondary-list__item secondary-list__item-backet">
+            <a href="#">
+              <img src="./img/header/backet.svg" width="21" height="18" alt="Корзина.">
+              Корзина: пока пуста
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="catalog">
+      <h1 class="catalog__title">Каталог товаров</h1>
+      <section class="offer-cards">
+        <ul class="catalog__list offer">
+          <li class="offer__item">
+            <img src="#" alt="Зайчик-попрыгайчик.">
+            <p class="offer__title">Зайчик-попрыгайчик</p>
+            <p class="offer__description">Рост 30 см, вес 200 г</p>
+            <a class="offer__price" href="#">1 200 руб.</a>
+          </li>
+          <li class="offer__item">
+            <img src="#" alt="Корзинка для белья.">
+            <p class="offer__title">Корзинка для белья</p>
+            <p class="offer__description">Диаметр 15 см, высота 10 см</p>
+            <a class="offer__price" href="#">690 руб.</a>
+          </li>
+          <li class="offer__item">
+            <img src="#" alt="Большая корзинка для игрушек.">
+            <p class="offer__title">Большая корзинка для игрушек</p>
+            <p class="offer__description">Диаметр 30 см, высота 30 см</p>
+            <a class="offer__price" href="#">1 500 руб.</a>
+          </li>
+        </ul>
+      </section>
+      <section class="production">
+        <img src="#" alt="Видео производстваю.">
+        <h2 class="production__title">Процесс производства</h2>
+        <p class="production__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <a class="production__button button">Сделать заказ</a>
+      </section>
+    </main>
+    <!-- Подлвал сайта -->
+    <footer class="footer">
+      <img src="#" alt="Логотип магазина «Мишка»">
+      <ul class="footer__social__list social">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+        </li>
+      </ul>
+      <div class="footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="#" alt="Логотип HTML Academy.">
+        </a>
+      </div>
+    </footer>
   </body>
 </html>
