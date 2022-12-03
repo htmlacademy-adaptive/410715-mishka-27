@@ -1,0 +1,35 @@
+.form {
+  &__note {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    color: rgba(68, 68, 68, 1);
+  }
+}
+
+.form-container {
+  &__description {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 30px;
+    color: rgba(68, 68, 68, 1);
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.group {
+  &__label {
+    font-size: 17px;
+    line-height: 16px;
+    font-weight: 700;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    color: rgba(99, 209, 187, 1);
+    font-size: 17px;
+    line-height: 16px;
+    font-weight: 700;
+  }
+}
