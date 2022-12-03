@@ -1,0 +1,46 @@
+.about {
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &__description {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 82px 0 0 0;
+    background: #FCFCFC;
+  }
+
+  &__item:first-child {
+    background: url("../../img/about-images/flower.svg") no-repeat;
+    background-position: center left 8px;
+  }
+
+  &__item:nth-child(2) {
+    background: url("../../img/about-images/money.svg") no-repeat;
+    background-position: center left 8px;
+  }
+  &__item:nth-child(3) {
+    background: url("../../img/about-images/heart.svg") no-repeat;
+    background-position: center left 8px;
+  }
+  &__item:nth-child(4) {
+    background: url("../../img/about-images/threads.svg") no-repeat;
+    background-position: center left 8px;
+  }
+  &__item:nth-child(5) {
+    background: url("../../img/about-images/rocket.svg") no-repeat;
+    background-position: center left 8px;
+  }
+  &__item:last-child {
+    background: url("../../img/about-images/gift.svg") no-repeat;
+    background-position: center left 8px;
+  }
+}
