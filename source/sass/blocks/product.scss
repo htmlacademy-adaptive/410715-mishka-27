@@ -1,0 +1,28 @@
+.product {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  &__description {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__price {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 30px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+  }
+
+  &__button {
+    background: url("../../img/button-images/cart.svg") no-repeat;
+    background-position: center center;
+    width: 20px;
+    height: 20px;
+  }
+}
