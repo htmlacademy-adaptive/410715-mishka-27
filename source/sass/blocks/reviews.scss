@@ -3,17 +3,18 @@
     font-size: 16px;
     line-height: 30px;
     font-weight: 400;
+    margin: 0;
   }
 }
 
-.slider {
-  &__list {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    list-style-type: none;
+.slider__item {
+  display: none;
+
+  &--current {
+    display: block;
   }
 }
+
 
 .autor {
   font-size: 17px;

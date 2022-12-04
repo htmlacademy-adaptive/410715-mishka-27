@@ -15,7 +15,7 @@
         <button class="navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="navigation__list site-list">
+        <ul class="navigation__list site-list list-reset">
           <li class="site-list__item">
             <a href="#">Каталог товаров</a>
           </li>
@@ -29,7 +29,7 @@
             <a href="#">Распродажа</a>
           </li>
         </ul>
-        <ul class="navigation__list secondary-list">
+        <ul class="navigation__list secondary-list list-reset">
           <li class="secondary-list__item secondary-list__item-search">
             <a href="#">Поиск по сайту</a>
           </li>
@@ -43,7 +43,7 @@
       <h1 class="catalog__title  title--large">Каталог товаров</h1>
       <section class="products">
         <h2 class="visually-hidden">Каталог товаров</h2>
-        <ul class="products__list product">
+        <ul class="products__list product list-reset">
           <li class="product__item">
             <img src="./img/catalog-images/photo-1.png" alt="Зайчик-попрыгайчик" width="260" height="195">
             <h3 class="product__title  title--little">Зайчик-попрыгайчик</h3>
@@ -75,7 +75,11 @@
       </section>
       <section class="production">
         <!-- Придумать и переделать верстку видео по макету -->
-        <video src="https://youtu.be/9TZXsZItgdw" width="400" height="300" controls="controls"></video>
+        <div class="production__video video">
+          <button class="video__button button" type="button">
+            <span class="visually-hidden">Воспроизвести видео.</span>
+          </button>
+        </div>
         <h2 class="production__title  title--little">Процесс производства</h2>
         <p class="production__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
         <a class="production__button button">Сделать заказ</a>
@@ -83,8 +87,7 @@
     </main>
     <!-- Подлвал сайта -->
     <footer class="footer">
-      <img src="#" alt="Логотип магазина «Мишка»">
-      <ul class="footer__social__list social">
+      <ul class="footer__social__list social list-reset">
         <li class="social__item">
           <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
             <svg xmlns="http://www.w3.org/2000/svg" width="27" height="18" fill="none">

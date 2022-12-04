@@ -5,6 +5,11 @@
     line-height: 16px;
     color: rgba(68, 68, 68, 1);
   }
+
+  &__group {
+    padding: 0;
+    border: none;
+  }
 }
 
 .form-container {
@@ -14,7 +19,6 @@
     line-height: 30px;
     color: rgba(68, 68, 68, 1);
     margin: 0;
-    padding: 0;
   }
 }
 

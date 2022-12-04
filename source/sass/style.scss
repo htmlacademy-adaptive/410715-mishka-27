@@ -1,4 +1,10 @@
+//Global styles
 @import "./typography/typography.scss";
+@import "./global/global.scss";
+@import "./global/visually-hidden.scss";
+@import "./global/list-reset.scss";
+
+// Block styles
 @import "./blocks/info.scss";
 @import "./components/button.scss";
 @import "./blocks/promo.scss";
@@ -8,3 +14,5 @@
 @import "./blocks/footer.scss";
 @import "./blocks/form.scss";
 @import "./blocks/product.scss";
+@import "./blocks/video.scss";
+@import "./blocks/production.scss";
