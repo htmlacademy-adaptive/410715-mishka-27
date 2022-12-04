@@ -1,43 +1,30 @@
-.about {
-  &__description {
-    margin: 0;
+.about__item {
+  line-height: 20px;
+  padding: 82px 0 0 0;
+  background-position: center left 8px;
+  background-repeat: no-repeat;
+
+  &:first-child {
+    background-image: url("../../img/about-images/flower.svg");
   }
 
-  &__item {
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 20px;
-    padding: 82px 0 0 0;
-    background: #fcfcfc;
+  &:nth-child(2) {
+    background-image: url("../../img/about-images/money.svg");
   }
 
-  &__item:first-child {
-    background: url("../../img/about-images/flower.svg") no-repeat;
-    background-position: center left 8px;
+  &:nth-child(3) {
+    background-image: url("../../img/about-images/heart.svg");
   }
 
-  &__item:nth-child(2) {
-    background: url("../../img/about-images/money.svg") no-repeat;
-    background-position: center left 8px;
+  &:nth-child(4) {
+    background-image: url("../../img/about-images/threads.svg");
   }
 
-  &__item:nth-child(3) {
-    background: url("../../img/about-images/heart.svg") no-repeat;
-    background-position: center left 8px;
+  &:nth-child(5) {
+    background-image: url("../../img/about-images/rocket.svg");
   }
 
-  &__item:nth-child(4) {
-    background: url("../../img/about-images/threads.svg") no-repeat;
-    background-position: center left 8px;
-  }
-
-  &__item:nth-child(5) {
-    background: url("../../img/about-images/rocket.svg") no-repeat;
-    background-position: center left 8px;
-  }
-
-  &__item:last-child {
-    background: url("../../img/about-images/gift.svg") no-repeat;
-    background-position: center left 8px;
+  &:last-child {
+    background-image: url("../../img/about-images/gift.svg");
   }
 }

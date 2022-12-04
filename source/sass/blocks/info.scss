@@ -1,22 +1,25 @@
+@import "../global/color.scss";
+
 .info {
   background: url("../../img/background-images/index-info.jpg") no-repeat center;
+}
 
-  &__button {
-    color: rgba(255, 255, 255, 1);
-    font-size: 19px;
-    line-height: 24px;
-    font-weight: 700;
-    text-align: left;
-    width: 100%;
+.info__button {
+  color: $text-button-light;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: left;
+  width: 100%;
 
-    &:first-child {
-      background: url("../../img/button-images/lamp.svg") rgba(99, 209, 187, 1) no-repeat;
-      background-position: center right 16px;
-    }
+  &:first-child {
+    background: url("../../img/button-images/lamp.svg") $background-button-info1 no-repeat;
+    background-position: center right 16px;
+  }
 
-    &:last-child {
-      background: url("../../img/button-images/toy.svg") rgba(99, 209, 187, 1) no-repeat;
-      background-position: center right 16px;
-    }
+  &:last-child {
+    background: url("../../img/button-images/toy.svg") $background-button-info2 no-repeat;
+    background-position: center right 16px;
   }
 }
+

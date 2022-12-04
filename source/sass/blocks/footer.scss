@@ -1,4 +1,6 @@
+@import "../global/color.scss";
+
 .copyright {
   padding: 22px 0 0 0;
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid $border;
 }

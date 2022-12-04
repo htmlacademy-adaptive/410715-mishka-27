@@ -1,27 +1,24 @@
-.promo {
-  &__sub-title {
-    color: rgba(99, 209, 187, 1);
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 20px;
-    margin: 0;
-    text-transform: uppercase;
-  }
+@import "../global/color.scss";
 
-  &__description {
-    color: rgba(68, 68, 68, 1);
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 24px;
-    margin: 0;
-  }
-
-  &__item {
-    color: rgba(68, 68, 68, 1);
-    display: flex;
-    font-size: 15px;
-    line-height: 20px;
-    border-bottom: 1px solid rgba(236, 236, 236, 1);
-    padding: 12px 0;
-  }
+.promo__sub-title {
+  color: $sub-title;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  margin: 0;
+  text-transform: uppercase;
 }
+
+.promo__description {
+  line-height: 24px;
+  margin: 0;
+}
+
+.promo__item {
+  color: $text;
+  display: flex;
+  line-height: 20px;
+  border-bottom: 1px solid $border-item;
+  padding: 12px 0;
+}
+
