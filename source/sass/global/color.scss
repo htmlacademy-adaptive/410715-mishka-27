@@ -1,15 +1,24 @@
-//T Text
-$base-color: rgba(0, 0, 0, 1);
-$sub-title: rgba(99, 209, 187, 1);
-$text: rgba(68, 68, 68, 1);
-$text-input: rgba(0, 0, 0, 0.3);
-$text-button-light: rgba(255, 255, 255, 1);
+// Color
+$color-white: #ffffff;
+$color-black: #000000;
+$color-aqua: #63d1bb;
+$color-aqua-dark: #56c3b2;
+$color-gray-dark: #444444;
+$color-gray-light: #e5e5e5;
+
+
+// Text
+$base-color: rgba($color-black, 1);
+$sub-title: rgba($color-aqua, 1);
+$text: rgba($color-gray-dark, 1);
+$text-input: rgba($color-black, 0.3);
+$text-button-light: rgba($color-white, 1);
 
 // Border
-$border: rgba(229, 229, 229, 1);
-$border-field: rgba(98, 209, 186, 1);
-$border-item: rgba(236, 236, 236, 1);
+$border: rgba($color-gray-dark, 1);
+$border-field: rgba($color-aqua, 1);
+$border-item: rgba($color-gray-light, 1);
 
 // Background button
-$background-button-info1: rgba(99, 209, 187, 1);
-$background-button-info2: rgba(86, 195, 178, 1);
+$background-button-info-first: rgba($color-aqua, 1);
+$background-button-info-second: rgba($color-aqua-dark, 1);

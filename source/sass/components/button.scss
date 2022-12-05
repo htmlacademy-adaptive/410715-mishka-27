@@ -1,11 +1,10 @@
 .button {
-  padding: 16px 0;
+  padding: 18px 11px;
   margin: 0;
-  border: none;
+  border: 1px solid $border;
   text-decoration: none;
-  display: block;
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
-  color: #444444;
+  color: $text;
 }
