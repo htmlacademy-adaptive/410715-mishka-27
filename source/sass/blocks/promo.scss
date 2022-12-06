@@ -1,0 +1,21 @@
+.promo__sub-title {
+  color: $sub-title;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.promo__description {
+  line-height: 24px;
+  margin: 0;
+}
+
+.promo__item {
+  color: $text;
+  display: flex;
+  line-height: 20px;
+  border-bottom: 1px solid $border-item;
+  padding: 12px 0;
+}

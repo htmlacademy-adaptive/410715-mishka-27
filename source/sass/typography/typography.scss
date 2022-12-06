@@ -1,0 +1,25 @@
+.title {
+  &--large {
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+  }
+
+  &--medium {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+  }
+
+  &--little {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 0;
+    padding: 0;
+  }
+}

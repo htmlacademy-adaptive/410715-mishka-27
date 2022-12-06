@@ -1,0 +1,16 @@
+.video {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  width: 260px;
+  background: url("../../img/catalog-images/video-promo.jpg") no-repeat;
+}
+
+.video__button {
+  height: 77px;
+  width: 100px;
+  background: url("../../img/button-images/play.svg") no-repeat;
+  border-radius: 19px;
+  border: none;
+}

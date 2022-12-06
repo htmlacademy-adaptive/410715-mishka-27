@@ -1,0 +1,30 @@
+.about__item {
+  line-height: 20px;
+  padding: 82px 0 0 0;
+  background-position: center left 8px;
+  background-repeat: no-repeat;
+
+  &:first-child {
+    background-image: url("../../img/about-images/flower.svg");
+  }
+
+  &:nth-child(2) {
+    background-image: url("../../img/about-images/money.svg");
+  }
+
+  &:nth-child(3) {
+    background-image: url("../../img/about-images/heart.svg");
+  }
+
+  &:nth-child(4) {
+    background-image: url("../../img/about-images/threads.svg");
+  }
+
+  &:nth-child(5) {
+    background-image: url("../../img/about-images/rocket.svg");
+  }
+
+  &:last-child {
+    background-image: url("../../img/about-images/gift.svg");
+  }
+}

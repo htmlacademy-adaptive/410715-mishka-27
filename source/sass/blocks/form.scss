@@ -1,0 +1,43 @@
+.form__note {
+  font-size: 14px;
+  line-height: 16px;
+  color: $text;
+}
+
+.form__group {
+  padding: 0;
+  border: none;
+  border-top: 1px solid $border-field;
+}
+
+.form-container__description {
+  font-size: 13px;
+  color: $text;
+  margin: 0;
+}
+
+.group__label {
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+.group__title {
+  text-transform: uppercase;
+  color: $sub-title;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  width: 65px;
+  box-sizing: border-box;
+}
+
+.group__input {
+  font-family: "Open sans", sans-serif;
+  border: none;
+  border-bottom: 1px solid $base-color;
+  padding: 17px 0;
+  font-size: 17px;
+  line-height: 18px;
+  width: 100%;
+}
