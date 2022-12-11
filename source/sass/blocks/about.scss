@@ -12,8 +12,15 @@
 }
 
 .about__list {
-  display: grid;
-  grid-template-columns: auto auto;
+  @include tablet() {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  @include desktop() {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
 }
 
 .about__item {

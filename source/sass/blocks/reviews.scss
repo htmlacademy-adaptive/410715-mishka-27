@@ -13,6 +13,9 @@
   @include desktop() {
     margin-top: 90px;
     padding: 78px 50px 47px 50px;
+    background-image: url("../../img/background-images/reviews-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center left;
   }
 }
 
@@ -23,6 +26,11 @@
   align-items: center;
 
   @include tablet() {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  @include desktop() {
     display: grid;
     grid-template-columns: auto auto;
   }
@@ -78,6 +86,13 @@
     bottom: 0;
     right: 0;
   }
+
+  @include desktop() {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+  }
 }
 
 .reviews__prev,
@@ -111,5 +126,9 @@
 
   @include desktop() {
     width: 175px;
+    grid-area: 1 / 2 / 2/ 3;
+    font-size: 17px;
+    margin-left: auto;
+    margin-top: 0;
   }
 }

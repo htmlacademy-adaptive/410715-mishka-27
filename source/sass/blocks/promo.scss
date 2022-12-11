@@ -4,19 +4,30 @@
 
   @include tablet() {
     display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto;
-    padding: 0 50px;
+    grid-template-columns: 292px auto;
+    grid-template-areas: "pt pst" "pd pim" "pl pim" "pp pim";
     margin-top: 40px;
   }
 
   @include desktop() {
-    padding: 0 50px;
+    display: grid;
+    grid-template-columns: auto 292px auto;
+    grid-template-areas: "pst pt pim" "pst pd pim" "pst pl pim" "pst pp pim";
     margin-top: 115px;
   }
 }
 
+.promo__title {
+  grid-area: pt;
+
+  @include desktop() {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
 .promo__sub-title {
+  grid-area: pst;
   color: $sub-title;
   font-size: 17px;
   font-weight: 700;
@@ -25,13 +36,18 @@
   text-transform: uppercase;
 
   @include tablet() {
-    grid-area: 1 / 2 / 2 / 3;
+    width: 100px;
+    margin-left: auto;
+  }
+
+  @include desktop() {
     width: 100px;
     margin-left: auto;
   }
 }
 
 .promo__description {
+  grid-area: pd;
   line-height: 24px;
   margin: 17px 0 0 0;
 
@@ -45,14 +61,11 @@
 }
 
 .promo__list {
+  grid-area: pl;
   margin-top: 14px;
 
   @include tablet() {
     margin-top: 23px;
-  }
-
-  @include desktop() {
-    margin-top: 48px;
   }
 }
 
@@ -69,16 +82,24 @@
 }
 
 .promo__image {
+  grid-area: pim;
   margin-top: 28px;
 
   @include tablet() {
     height: 404px;
     width: 334px;
-    grid-area: 6 / 2 / -1 / -1;
+    margin-left: auto;
+  }
+
+  @include desktop() {
+    height: 636px;
+    width: 525px;
+    margin-left: auto;
   }
 }
 
 .promo__price {
+  grid-area: pp;
   margin-top: 25px;
 }
 
