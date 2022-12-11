@@ -2,10 +2,11 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="./css/style.css">
   </head>
-  <body class="body">
+  <body class="body container">
     <!-- Шапка сайта -->
     <header class="header">
       <a href="#" class="header__logo">
@@ -43,7 +44,7 @@
       <h1 class="visually-hidden">Магизан «Мишка» - магазин вязанных изделий.</h1>
       <!-- Блок с информацией о сайте -->
       <section class="info">
-        <h2 class="info__title title--large">Милые штуки ручной работы для дома</h2>
+        <h2 class="info__title title--large">Милые штуки ручной <br> работы для дома</h2>
         <div class="info__footer">
         <a class="info__button button" href="#">Предметы интерьера</a>
         <a class="info__button button" href="#">Детские игрушки</a>
@@ -54,7 +55,7 @@
         <h2 class="promo__title title--medium">Вязаные корзинки</h2>
         <h3 class="promo__sub-title">Товар недели</h3>
         <p class="promo__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.</p>
-        <dl class="promo_list list-reset">
+        <dl class="promo__list list-reset">
           <div class="promo__item">
             <dt class="promo__item-title">Цвет:</dt>
             <dd class="promo__item-description">тиффани/серый</dd>
@@ -68,7 +69,7 @@
             <dd class="promo__item-description"> 15 см</dd>
           </div>
         </dl>
-        <img src="./img/products/recommended-product.jpg" width="260" height="315" alt="Рекомендованный товар">
+        <img class="promo__image" src="./img/products/recommended-product.jpg" width="260" height="315" alt="Рекомендованный товар">
         <div class="promo__price">
           <p class="title--little">Цена: 990 руб.</p>
           <a class="promo__price-button button" href="#">Заказать</a>
@@ -79,22 +80,22 @@
         <h2 class="about__title title--medium">Коротко о нас:</h2>
         <ul class="about__list list-reset">
           <li class="about__item">
-            <p class="about__description title--little">Экологически чистые материалы</p>
+            <p class="about__description title--little">Экологически <br> чистые материалы</p>
           </li>
           <li class="about__item">
-            <p class="about__description title--little">Скандинавский стиль по российской цене</p>
+            <p class="about__description title--little">Скандинавский стиль <br> по российской цене</p>
           </li>
           <li class="about__item">
-            <p class="about__description title--little">Увеличивает лайки на фотографиях</p>
+            <p class="about__description title--little">Увеличивает лайки <br> на фотографиях</p>
           </li>
           <li class="about__item">
-            <p class="about__description title--little">Связано вручную с любовью и умилением</p>
+            <p class="about__description title--little">Связано вручную <br> с любовью и умилением</p>
           </li>
           <li class="about__item">
-            <p class="about__description title--little">Поддержка отечественного производителя</p>
+            <p class="about__description title--little">Поддержка отечественного <br> производителя</p>
           </li>
           <li class="about__item">
-            <p class="about__description title--little">Поставляется в подарочной упаковке</p>
+            <p class="about__description title--little">Поставляется <br> в подарочной упаковке</p>
           </li>
         </ul>
       </section>
@@ -119,15 +120,21 @@
               <span class="autor__contact">@misssssiskras2</span>
             </li>
           </ul>
-          <button class="reviews__prev button" type="button">Предыдущий отзыв</button>
-          <button class="reviews__next button" type="button">Следующий отзыв</button>
+          <div class="reviews__button-block">
+            <button class="reviews__prev button" type="button">
+              <span class="visually-hidden">Предыдущий отзыв</span>
+            </button>
+            <button class="reviews__next button" type="button">
+              <span class="visually-hidden">Следующий отзыв</span>
+            </button>
+          </div>
           <a class="reviews__add-review button">Написать</a>
         </div>
       </section>
       <!-- Блок наши контакты -->
       <section class="contacts">
         <h2 class="contacts__title title--medium">Контакты</h2>
-        <dl class="contacts_list list-reset">
+        <dl class="contacts__list list-reset">
           <div class="contacts__item">
             <dt class="contacts__item-title">e-mail:</dt>
             <dd class="contacts__item-description">info@mimimishkashop.ru</dd>
@@ -137,12 +144,15 @@
             <dd class="contacts__item-description">г. Санкт-Петербург <br> ул. Большая Конюшенная <br>д. 19/8, офис 101</dd>
           </div>
         </dl>
-        <img src="#" alt="Google map">
+        <div class="contacts__map">
+          <span class="visually-hidden">Карта проезда</span>
+        </div>
         <a class="contacts__button button" href="#">Напишите нам</a>
       </section>
       <!-- Подлвал сайта -->
       <footer class="footer">
-        <ul class="footer__social__list social list-reset">
+        <img class="footer__logo" src="./img/logo/logo-footer.svg" width="101" height="34" alt="Логотип магазина">
+        <ul class="footer__social-list social list-reset">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
               <svg xmlns="http://www.w3.org/2000/svg" width="27" height="18" fill="none">

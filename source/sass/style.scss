@@ -1,12 +1,14 @@
-//Global styles
-@import "./typography/typography.scss";
-@import "./global/global.scss";
-@import "./global/color.scss";
-
 // Utils
 @import "./utils/visually-hidden.scss";
 @import "./utils/list-reset.scss";
 @import "./utils/link-reset";
+@import "./utils/device-width.scss";
+
+//Global styles
+@import "./global/color.scss";
+@import "./typography/typography.scss";
+@import "./global/global.scss";
+@import "./global/container.scss";
 
 // Components
 @import "./components/button.scss";
@@ -22,3 +24,5 @@
 @import "./blocks/product.scss";
 @import "./blocks/video.scss";
 @import "./blocks/production.scss";
+@import "./blocks/copyright.scss";
+@import "./blocks/social.scss";

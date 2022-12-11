@@ -1,11 +1,14 @@
 .button {
+  box-sizing: border-box;
   display: inline-flex;
   padding: 18px 11px;
   margin: 0;
-  border: 1px solid $border;
+  justify-content: center;
+  outline: 1px solid $border;
   text-decoration: none;
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
   color: $text;
+  border: none;
 }

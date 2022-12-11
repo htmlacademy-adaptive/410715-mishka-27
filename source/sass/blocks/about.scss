@@ -1,3 +1,21 @@
+.about {
+  margin-top: 72px;
+  padding: 0 30px;
+
+  @include tablet() {
+    margin-top: 124px;
+  }
+
+  @include desktop() {
+    margin-top: 164px;
+  }
+}
+
+.about__list {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
 .about__item {
   line-height: 20px;
   padding: 82px 0 0 0;

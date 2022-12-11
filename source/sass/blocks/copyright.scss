@@ -1,0 +1,17 @@
+.copyright {
+  display: flex;
+  border-top: 1px solid $border-item;
+  justify-content: center;
+
+  @include tablet() {
+    border: none;
+  }
+
+  @include desktop() {
+    border: none;
+  }
+}
+
+.copyright__text {
+  margin-right: 27px;
+}
