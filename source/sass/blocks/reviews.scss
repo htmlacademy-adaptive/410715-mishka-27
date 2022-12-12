@@ -2,15 +2,15 @@
   padding-top: 58px;
 
   @include tablet() {
-    margin: 82px -50px 0 -50px;
-    padding: 80px 50px 47px 50px;
+    margin-top: 82px;
+    padding-bottom: 47px;
     background-image: url("../../img/background-images/reviews-background.jpg");
     background-repeat: no-repeat;
     background-position: center left;
   }
 
   @include desktop() {
-    margin: 90px 0 0 0;
+    margin: 90px auto 0 auto;
     padding: 78px 50px 47px 50px;
   }
 }
