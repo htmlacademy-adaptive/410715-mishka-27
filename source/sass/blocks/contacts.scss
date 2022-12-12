@@ -54,7 +54,7 @@
 }
 
 .contacts__map {
-  width: 320px;
+  width: 100vw;
   height: 457px;
   background-image: url("../../img/background-images/contacts-map.jpg");
   background-repeat: no-repeat;
@@ -63,11 +63,10 @@
 
   @include tablet() {
     margin: 48px -50px 0 -50px;
-    width: 768px;
   }
 
   @include desktop() {
-    width: 527px;
+    width: 100%;
     grid-area: 1 / 2 / 4 / 3;
     margin: 0;
   }
