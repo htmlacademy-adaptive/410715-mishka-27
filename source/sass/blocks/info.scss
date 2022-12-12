@@ -56,9 +56,11 @@
   font-weight: 700;
   color: $color-white;
   padding: 24px 0 31px 30px;
+  margin: 0 -30px;
 
   @include tablet () {
     padding: 25px 0 25px 36px;
+    margin: 0;
   }
 
   &:first-child {

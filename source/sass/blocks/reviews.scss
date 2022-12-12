@@ -2,7 +2,7 @@
   padding-top: 58px;
 
   @include tablet() {
-    margin-top: 82px;
+    margin: 82px -50px 0 -50px;
     padding: 80px 50px 47px 50px;
     background-image: url("../../img/background-images/reviews-background.jpg");
     background-repeat: no-repeat;
@@ -10,7 +10,7 @@
   }
 
   @include desktop() {
-    margin-top: 90px;
+    margin: 90px 0 0 0;
     padding: 78px 50px 47px 50px;
   }
 }

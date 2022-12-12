@@ -4,13 +4,12 @@
 @import "./utils/link-reset";
 
 //Global styles
+@import "./global/mixins.scss";
 @import "./global/fonts.scss";
 @import "./global/color.scss";
 @import "./typography/typography.scss";
 @import "./global/global.scss";
 @import "./global/container.scss";
-@import "./global/mixins.scss";
-
 // Components
 @import "./components/button.scss";
 
