@@ -1,14 +1,14 @@
 .contacts {
-  margin-top: 89px;
+  padding-top: 89px;
   text-align: center;
 
   @include tablet() {
-    margin-top: 130px;
+    padding-top: 130px;
   }
 
   @include desktop() {
     display: grid;
-    margin-top: 161px;
+    padding-top: 161px;
     grid-template-columns: auto auto;
   }
 }
@@ -22,14 +22,12 @@
 }
 
 .contacts__list {
-  display: flex;
-  flex-direction: column;
   text-align: left;
 
-  @include tablet() {
-    flex-direction: row;
+  // Доделать only, в десктопной версии колонкой идет список
+  @include tablet-only() {
+    display: flex;
     justify-content: space-between;
-    padding: 0 50px;
   }
 }
 
@@ -41,20 +39,12 @@
   @include tablet() {
     margin-top: 40px;
   }
-
-  @include desktop() {
-    margin-top: 40px;
-  }
 }
 
 .contacts__item-title {
   width: 76px;
 
   @include tablet() {
-    width: 81px;
-  }
-
-  @include desktop() {
     width: 81px;
   }
 }
@@ -91,6 +81,5 @@
 
   @include desktop() {
     margin: auto;
-    width: 230px;
   }
 }

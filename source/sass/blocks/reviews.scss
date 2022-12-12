@@ -1,6 +1,5 @@
 .reviews {
-  margin-top: 58px;
-  padding: 0 30px;
+  padding-top: 58px;
 
   @include tablet() {
     margin-top: 82px;
@@ -13,24 +12,13 @@
   @include desktop() {
     margin-top: 90px;
     padding: 78px 50px 47px 50px;
-    background-image: url("../../img/background-images/reviews-background.jpg");
-    background-repeat: no-repeat;
-    background-position: center left;
   }
 }
 
 .reviews__slider {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 
   @include tablet() {
-    display: grid;
-    grid-template-columns: auto auto;
-  }
-
-  @include desktop() {
     display: grid;
     grid-template-columns: auto auto;
   }
@@ -81,13 +69,6 @@
   margin-top: 30px;
 
   @include tablet() {
-    position: absolute;
-    z-index: 1;
-    bottom: 0;
-    right: 0;
-  }
-
-  @include desktop() {
     position: absolute;
     z-index: 1;
     bottom: 0;

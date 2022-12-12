@@ -6,10 +6,6 @@
   @include tablet() {
     border: none;
   }
-
-  @include desktop() {
-    border: none;
-  }
 }
 
 .copyright__text {

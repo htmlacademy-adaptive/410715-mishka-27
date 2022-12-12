@@ -1,25 +1,19 @@
 .about {
-  margin-top: 72px;
-  padding: 0 30px;
+  padding-top: 72px;
 
   @include tablet() {
-    margin-top: 124px;
+    padding-top: 124px;
   }
 
   @include desktop() {
-    margin-top: 164px;
+    padding-top: 164px;
   }
 }
 
 .about__list {
   @include tablet() {
-    display: grid;
-    grid-template-columns: auto auto;
-  }
-
-  @include desktop() {
-    display: grid;
-    grid-template-columns: auto auto;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -28,6 +22,10 @@
   padding: 82px 0 0 0;
   background-position: center left 8px;
   background-repeat: no-repeat;
+
+  @include tablet() {
+    width: 50%;
+  }
 
   &:first-child {
     background-image: url("../../img/about-images/flower.svg");
