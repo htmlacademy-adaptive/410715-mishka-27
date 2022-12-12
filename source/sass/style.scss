@@ -2,7 +2,6 @@
 @import "./utils/visually-hidden.scss";
 @import "./utils/list-reset.scss";
 @import "./utils/link-reset";
-@import "./utils/device-width.scss";
 
 //Global styles
 @import "./global/fonts.scss";
@@ -10,6 +9,7 @@
 @import "./typography/typography.scss";
 @import "./global/global.scss";
 @import "./global/container.scss";
+@import "./global/mixins.scss";
 
 // Components
 @import "./components/button.scss";
