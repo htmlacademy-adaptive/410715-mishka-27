@@ -1,5 +1,6 @@
 // Color
 $color-white: #ffffff;
+$color-white-dark: #f4f4f4;
 $color-black: #000000;
 $color-aqua: #63d1bb;
 $color-aqua-dark: #56c3b2;
@@ -7,6 +8,8 @@ $color-gray: #f9f9f9;
 $color-gray-dark: #444444;
 $color-gray-light: #e5e5e5;
 
+// Background
+$background: rgba($color-white-dark, 1);
 
 // Text
 $base-color: rgba($color-black, 1);
