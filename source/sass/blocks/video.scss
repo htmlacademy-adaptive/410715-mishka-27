@@ -3,8 +3,14 @@
   align-items: center;
   justify-content: center;
   height: 150px;
-  width: 260px;
-  background: url("../../img/catalog-images/video-promo.jpg") no-repeat;
+  background-image: url("../../img/catalog-images/video-promo.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  @include tablet() {
+    height: 455px;
+  }
 }
 
 .video__button {
