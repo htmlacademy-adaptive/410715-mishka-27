@@ -17,11 +17,6 @@
 
 .promo__title {
   grid-area: pt;
-
-  @include desktop() {
-    font-size: 53px;
-    line-height: 57px;
-  }
 }
 
 .promo__sub-title {
@@ -36,6 +31,8 @@
   @include tablet() {
     width: 100px;
     margin-left: auto;
+    font-size: 17px;
+    line-height: 17px;
   }
 }
 

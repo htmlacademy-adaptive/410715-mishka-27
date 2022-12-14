@@ -25,6 +25,7 @@
 
   @include tablet() {
     width: 50%;
+    line-height: 22px;
   }
 
   &:first-child {

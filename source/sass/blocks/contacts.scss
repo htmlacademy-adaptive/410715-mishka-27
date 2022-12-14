@@ -15,16 +15,11 @@
 
 .contacts__title {
   text-align: left;
-
-  @include tablet() {
-    padding-left: 50px;
-  }
 }
 
 .contacts__list {
   text-align: left;
 
-  // Доделать only, в десктопной версии колонкой идет список
   @include tablet-only() {
     display: flex;
     justify-content: space-between;
@@ -37,6 +32,7 @@
   margin-top: 28px;
 
   @include tablet() {
+    font-size: 17px;
     margin-top: 40px;
   }
 }
