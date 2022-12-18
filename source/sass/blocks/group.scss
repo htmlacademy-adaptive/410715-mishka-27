@@ -14,11 +14,18 @@
   @include tablet() {
     background-color: $color-white-dark;
     margin: 0 -50px;
+    padding-left: 219px;
 
     .group__title {
       left: 50px;
     }
 
+    .group__input {
+      max-width: 501px;
+    }
+  }
+
+  @include desktop() {
     .group__input {
       max-width: 700px;
     }
@@ -85,6 +92,11 @@
   @include tablet() {
     min-height: 52px;
     margin-top: 24px;
+    padding-left: 78px;
+
+    @include desktop() {
+      padding-left: 80px;
+    }
   }
 }
 
@@ -137,6 +149,7 @@
 
   @include tablet() {
     min-height: 52px;
+    padding-left: 82px;
   }
 }
 
@@ -178,5 +191,11 @@
 
   @include desktop() {
     grid-template-columns: auto auto auto;
+  }
+}
+
+.group--name {
+  @include desktop() {
+    padding-right: 175px;
   }
 }

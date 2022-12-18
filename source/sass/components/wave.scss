@@ -1,0 +1,8 @@
+.wave {
+  @include tablet() {
+    background-image: url("../../img/background-images/wave.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 100%;
+  }
+}
