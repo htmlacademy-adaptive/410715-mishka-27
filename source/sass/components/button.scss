@@ -1,7 +1,6 @@
 .button {
   box-sizing: border-box;
   display: inline-flex;
-  padding: 18px 11px;
   margin: 0;
   justify-content: center;
   text-decoration: none;
@@ -9,10 +8,11 @@
   border: none;
   text-transform: uppercase;
   font-weight: 700;
+  background-color: transparent;
+  cursor: pointer;
 
   &--primary {
-    padding-top: 14px;
-    padding-bottom: 14px;
+    padding: 16px 20px;
     font-size: 18px;
     line-height: 20px;
     border: 2px solid $border;

@@ -1,8 +1,16 @@
 .product {
+  padding-top: 30px;
+
   @include tablet() {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px 52px;
+    padding-top: 79px;
+  }
+
+  @include desktop() {
+    padding-top: 128px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 52px;
+    grid-row-gap: 52px;
   }
 }
 
@@ -14,15 +22,10 @@
       margin-top: 54px;
     }
   }
-
-  @include desktop() {
-    max-width: 315px;
-  }
 }
 
 .product__info {
   @include tablet-only() {
-    position: relative;
     padding-left: 34px;
     padding-bottom: 25px;
   }
@@ -35,7 +38,8 @@
 .product__image {
   @include tablet() {
     height: 334px;
-    width: 334px;
+    width: 50%;
+    object-fit: cover;
   }
 
   @include desktop() {
@@ -67,14 +71,8 @@
 .product__footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-top: 41px;
-
-  @include tablet-only() {
-    position: absolute;
-    left: 34px;
-    bottom: 25px;
-    width: 90%;
-  }
 }
 
 .product__button {

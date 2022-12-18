@@ -1,12 +1,14 @@
 .footer {
   padding-top: 30px;
   padding-bottom: 30px;
+  background-color: $background;
 
   @include tablet() {
     padding-top: 51px;
     padding-bottom: 58px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 }
 

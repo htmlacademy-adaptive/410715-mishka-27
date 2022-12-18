@@ -40,52 +40,40 @@
         </ul>
       </nav>
     </header>
-    <main class="container">
+    <main>
       <h1 class="visually-hidden">Форма заказа магазина «Мишка».</h1>
       <!-- Форма для заказа -->
-      <section class="form-container">
+      <section class="form-container container">
         <h2 class="form-container__title  title--large">Вязание на заказ</h2>
         <p class="form-container__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <form class="form-container__form form" action="https://echo.htmlacademy.ru"  method="post">
           <fieldset class="form__group group">
             <legend class="group__title">Тип</legend>
-            <label class="group__label">
-              <input  type="radio" name="variant" value="Аксессуар для интерьера" checked>
+            <input class="group__radio" type="radio" name="variant" value="Аксессуар для интерьера" id="radio-1" checked>
+            <label class="group__label group__label--radio" for="radio-1">
               Аксессуар для интерьера
             </label>
-            <label class="group__label">
-              <input  type="radio" name="variant " value="Детская игрушка">
+            <input class="group__radio" type="radio" name="variant" value="Детская игрушка" id="radio-2">
+            <label class="group__label group__label--radio" for="radio-2">
               Детская игрушка
             </label>
           </fieldset>
-          <fieldset class="form__group">
+          <fieldset class="form__group group group--background group--table">
             <legend class="group__title">Цвет</legend>
-            <label class="group__label">
-              <input  type="checkbox" name="color" value="Белый" checked>
-              Белый
-            </label>
-            <label class="group__label">
-              <input  type="checkbox" name="color" value="Серый" checked>
-              Серый
-            </label>
-            <label class="group__label">
-              <input  type="checkbox" name="color" value="Тиффани">
-              Тиффани
-            </label>
-            <label class="group__label">
-              <input  type="checkbox" name="color" value="Черный">
-              Черный
-            </label>
-            <label class="group__label">
-              <input  type="checkbox" name="color" value="Розовый">
-              Розовый
-            </label>
-            <label class="group__label">
-              <input  type="checkbox" name="color" value="Оранжевый">
-              Оранжевый
-            </label>
+            <input class="group__checkbox" type="checkbox" name="color" value="Белый" id="checkbox-1" checked>
+            <label class="group__label group__label--checkbox" for="checkbox-1">Белый</label>
+            <input class="group__checkbox" type="checkbox" name="color" value="Серый" id="checkbox-2" checked>
+            <label class="group__label group__label--checkbox" for="checkbox-2">Серый</label>
+            <input class="group__checkbox" type="checkbox" name="color" value="Тиффани" id="checkbox-3">
+            <label class="group__label group__label--checkbox" for="checkbox-3">Тиффани</label>
+            <input class="group__checkbox" type="checkbox" name="color" value="Черный" id="checkbox-4">
+            <label class="group__label group__label--checkbox" for="checkbox-4">Черный</label>
+            <input class="group__checkbox" type="checkbox" name="color" value="Розовый" id="checkbox-5">
+            <label class="group__label group__label--checkbox" for="checkbox-5">Розовый</label>
+            <input class="group__checkbox" type="checkbox" name="color" value="Оранжевый" id="checkbox-6">
+            <label class="group__label group__label--checkbox" for="checkbox-6">Оранжевый</label>
           </fieldset>
-          <fieldset class="form__group">
+          <fieldset class="form__group group">
             <legend class="group__title">ФИО</legend>
             <label class="group__label">
               Имя:
@@ -100,21 +88,22 @@
               <input class="group__input"  type="text" name="middle-name" placeholder="Отчетсво, если желаете">
             </label>
           </fieldset>
-
-          <fieldset class="form__group">
+          <fieldset class="form__group group group--background">
             <legend class="group__title">ТЕЛ</legend>
             <input class="group__input" type="text" name="telephone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
           </fieldset>
-          <fieldset class="form__group">
+          <fieldset class="form__group group group--background">
             <legend class="group__title">E-MAIL</legend>
             <input class="group__input" type="text" name="e-mail" placeholder="Ваш Email*" required>
           </fieldset>
-          <fieldset class="form__group">
+          <fieldset class="form__group group">
             <legend class="group__title">ДОП</legend>
-            <textarea name="addational-information" rows="9" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            <textarea class="group__area" name="addational-information" rows="9" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </fieldset>
-          <p class="form__note">*Поля обязательны для заполнения</p>
-          <button class="form__button" type="submit">Отправить заказ</button>
+          <div class="form__footer">
+            <p class="form__note">*Поля обязательны для заполнения</p>
+            <button class="form__button button button--primary" type="submit">Отправить заказ</button>
+          </div>
         </form>
       </section>
     </main>
