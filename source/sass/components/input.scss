@@ -1,0 +1,15 @@
+.input {
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 17px;
+  line-height: 18px;
+  color: $base-color;
+  padding: 17px 10px;
+  width: 100%;
+  border-bottom: 2px solid $base-color;
+  background: transparent;
+
+  &::placeholder {
+    color: $placeholder;
+  }
+}

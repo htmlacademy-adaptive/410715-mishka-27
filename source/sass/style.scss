@@ -2,6 +2,7 @@
 @import "./utils/visually-hidden.scss";
 @import "./utils/list-reset.scss";
 @import "./utils/link-reset";
+@import "./utils/input-reset.scss";
 
 //Global styles
 @import "./global/mixins.scss";
@@ -14,6 +15,9 @@
 // Components
 @import "./components/button.scss";
 @import "./components/wave.scss";
+@import "./components/input";
+@import "./components/input-radio.scss";
+@import "./components/input-checkbox.scss";
 
 // Block styles
 @import "./blocks/info.scss";
