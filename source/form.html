@@ -47,7 +47,7 @@
         <h2 class="form-container__title  title--large wave">Вязание на заказ</h2>
         <p class="form-container__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <form class="form-container__form form" action="https://echo.htmlacademy.ru"  method="post">
-          <fieldset class="form__group group">
+          <fieldset class="form__group group group--type">
             <legend class="group__title">Тип</legend>
             <input class="visually-hidden" type="radio" name="variant" value="Аксессуар для интерьера" id="radio-1" checked>
             <label class="group__label input-radio" for="radio-1">
@@ -58,7 +58,7 @@
               Детская игрушка
             </label>
           </fieldset>
-          <fieldset class="form__group group group--background group--table">
+          <fieldset class="form__group group group--color group--background group--table">
             <legend class="group__title">Цвет</legend>
             <input class="visually-hidden" type="checkbox" name="color" value="Белый" id="checkbox-1" checked>
             <label class="group__label input-checkbox" for="checkbox-1">Белый</label>
@@ -73,7 +73,7 @@
             <input class="visually-hidden" type="checkbox" name="color" value="Оранжевый" id="checkbox-6">
             <label class="group__label input-checkbox" for="checkbox-6">Оранжевый</label>
           </fieldset>
-          <fieldset class="form__group group group--name">
+          <fieldset class="form__group group group--name group--name">
             <legend class="group__title">ФИО</legend>
             <label class="group__label">
               Имя:
@@ -88,15 +88,15 @@
               <input class="input-reset input"  type="text" name="middle-name" placeholder="Отчетсво, если желаете">
             </label>
           </fieldset>
-          <fieldset class="form__group group group--background">
+          <fieldset class="form__group group group--phone group--background">
             <legend class="group__title">ТЕЛ</legend>
             <input class="input-reset input" type="text" name="telephone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
           </fieldset>
-          <fieldset class="form__group group group--background">
-            <legend class="group__title">E-MAIL</legend>
+          <fieldset class="form__group group group--email group--background">
+            <legend class="group__title group__title--email">E-MAIL</legend>
             <input class="input-reset input" type="text" name="e-mail" placeholder="Ваш Email*" required>
           </fieldset>
-          <fieldset class="form__group group">
+          <fieldset class="form__group group group--more">
             <legend class="group__title">ДОП</legend>
             <textarea class="group__area" name="addational-information" rows="9" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </fieldset>
