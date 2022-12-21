@@ -32,24 +32,6 @@
   }
 }
 
-.input-radio::after {
-  position: absolute;
-  top: 12px;
-  left: 12px;
-  border-radius: 100%;
-  content: "";
-  width: 18px;
-  height: 18px;
-  background-color: $color-aqua-dark;
-
-  @include tablet() {
-    top: 15px;
-    left: 15px;
-    height: 22px;
-    width: 22px;
-  }
-}
-
 .input-radio:not(:first-of-type) {
   margin-top: 11px;
 

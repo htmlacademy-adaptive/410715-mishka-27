@@ -80,12 +80,49 @@
   }
 }
 
-.group__radio:checked + .group__label--radio::after {
-  // Заюзать как то
+.group__radio:checked + .input-radio::after {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  border-radius: 100%;
+  content: "";
+  width: 18px;
+  height: 18px;
+  background-color: $color-aqua-dark;
+
+  @include tablet() {
+    top: 15px;
+    left: 15px;
+    height: 22px;
+    width: 22px;
+  }
 }
 
-.group__checkbox:checked + .group__label--checkbox::before {
-  // Заюзать как то
+.input-radio:not(:first-of-type) {
+  margin-top: 11px;
+
+  @include tablet() {
+    margin-top: 24px;
+  }
+}
+
+.group__checkbox:checked + .input-checkbox::after {
+  position: absolute;
+  content: "";
+  top: 12px;
+  left: 7px;
+  width: 23px;
+  height: 16px;
+  background-image: url("../../img/background-images/checked.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @include tablet() {
+    top: 16px;
+    left: 10px;
+    height: 22px;
+    width: 32px;
+  }
 }
 
 .group__area {
@@ -113,10 +150,3 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-
-.group--name {
-  @include desktop() {
-    padding-right: 175px;
-  }
-}
-

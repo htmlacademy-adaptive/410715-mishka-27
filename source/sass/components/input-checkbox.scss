@@ -34,22 +34,3 @@
     width: 52px;
   }
 }
-
-.input-checkbox::after {
-  position: absolute;
-  content: "";
-  top: 12px;
-  left: 7px;
-  width: 23px;
-  height: 16px;
-  background-image: url("../../img/background-images/checked.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-
-  @include tablet() {
-    top: 16px;
-    left: 10px;
-    height: 22px;
-    width: 32px;
-  }
-}
