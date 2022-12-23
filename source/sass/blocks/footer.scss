@@ -1,4 +1,37 @@
-.copyright {
-  padding: 22px 0 0 0;
-  border-top: 1px solid $border;
+.footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: $background;
+
+  @include tablet() {
+    padding-top: 51px;
+    padding-bottom: 58px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.footer__logo {
+  display: none;
+
+  @include tablet() {
+    display: block;
+  }
+}
+
+.footer__copyright {
+  padding-top: 22px;
+
+  @include tablet() {
+    padding: 0;
+  }
+}
+
+.footer__social-list {
+  margin: 0 auto 28px auto;
+
+  @include tablet() {
+    margin: 0;
+  }
 }

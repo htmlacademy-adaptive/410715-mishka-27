@@ -1,8 +1,32 @@
+.about {
+  padding-top: 72px;
+
+  @include tablet() {
+    padding-top: 124px;
+  }
+
+  @include desktop() {
+    padding-top: 164px;
+  }
+}
+
+.about__list {
+  @include tablet() {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .about__item {
   line-height: 20px;
   padding: 82px 0 0 0;
   background-position: center left 8px;
   background-repeat: no-repeat;
+
+  @include tablet() {
+    width: 50%;
+    line-height: 22px;
+  }
 
   &:first-child {
     background-image: url("../../img/about-images/flower.svg");

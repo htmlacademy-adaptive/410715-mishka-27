@@ -1,24 +1,114 @@
-.reviews__description {
-  font-size: 16px;
-  margin: 0;
-}
+.reviews {
+  padding-top: 58px;
 
-.slider__item {
-  display: none;
+  @include tablet() {
+    margin-top: 82px;
+    padding-bottom: 47px;
+    background-image: url("../../img/background-images/reviews-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center left;
+  }
 
-  &--current {
-    display: block;
+  @include desktop() {
+    margin: 90px auto 0 auto;
+    padding: 78px 50px 47px 50px;
   }
 }
 
-.autor {
+.reviews__title {
+  @include tablet() {
+    order: -2;
+    max-width: 60%;
+  }
+}
+
+.reviews__slider {
+  position: relative;
+
+  @include tablet() {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+
+.reviews__description {
+  font-size: 15px;
+  margin: 0;
+  margin-top: 14px;
+
+  @include tablet() {
+    font-size: 17px;
+  }
+}
+
+.reviews__author {
   font-size: 17px;
   font-weight: 700;
   margin: 0;
+  margin-top: 33px;
+  line-height: 24px;
+
+  @include tablet() {
+    font-size: 18px;
+    margin-top: 61px;
+  }
+
+  @include desktop() {
+    font-size: 17px;
+    margin-top: 44px;
+  }
 }
 
-.autor__contact {
+.reviews__author-contact {
   color: $text;
   font-size: 17px;
-  line-height: 20px;
+  line-height: 30px;
+}
+
+.reviews__buttons {
+  margin-top: 30px;
+  text-align: center;
+
+  @include tablet() {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.reviews__prev,
+.reviews__next {
+  background-image: url("../../img/button-images/arrow-button.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 26px;
+  padding: 0;
+  outline: none;
+}
+
+.reviews__prev {
+  margin-right: 80px;
+}
+
+.reviews__next {
+  transform: rotate(180deg);
+}
+
+.reviews__add-review {
+  width: 100%;
+  justify-content: center;
+  margin-top: 38px;
+
+  @include tablet() {
+    order: -1;
+    width: auto;
+    max-width: 40%;
+    min-width: 175px;
+    font-size: 17px;
+    margin-top: 0;
+    margin-left: auto;
+  }
 }

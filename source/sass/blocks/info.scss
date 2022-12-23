@@ -1,25 +1,60 @@
 .info {
-  background: url("../../img/background-images/index-info.jpg") no-repeat center;
+  background-image: url("../../img/background-images/index-info.jpg");
+  background-repeat: no-repeat;
+  background-size: 170%;
+  background-position: center bottom 68px;
+  background-color: $color-gray;
+
+  @include tablet() {
+    background-position: center bottom -15px;
+  }
+
+  @include desktop() {
+    background-size: 135%;
+    background-position: center bottom -25px;
+  }
+}
+
+.info__title {
+  max-width: 260px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 90px;
+  padding-bottom: 120px;
+
+  @include tablet() {
+    max-width: 668px;
+    padding-top: 120px;
+    padding-bottom: 372px;
+  }
+
+  @include desktop() {
+    max-width: 700px;
+    padding-top: 158px;
+    padding-bottom: 355px;
+  }
+}
+
+.info__footer {
+  @include tablet() {
+    display: flex;
+  }
 }
 
 .info__button {
+  display: flex;
   font-size: 19px;
   line-height: 24px;
-  text-align: left;
-  width: 100%;
-  display: block;
-  background-repeat: no-repeat;
-  background-position: center right 16px;
-  color: $color-gray-light;
-  border: none;
+  text-decoration: none;
+  font-weight: 700;
+  color: $color-white;
+  padding: 24px 0 31px 30px;
+  margin: 0 -30px;
+  background-color: $background-button-info-first;
 
-  &:first-child {
-    background-image: url("../../img/button-images/lamp.svg");
-    background-color: $background-button-info-first;
-  }
-
-  &:last-child {
-    background-image: url("../../img/button-images/toy.svg");
-    background-color: $background-button-info-second;
+  @include tablet () {
+    padding: 25px 0 25px 36px;
+    margin: 0;
+    width: 100%;
   }
 }

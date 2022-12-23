@@ -1,0 +1,22 @@
+.form-container__title {
+  padding: 74px 0;
+  background-color: $color-white-dark;
+  margin: 0 -30px;
+  text-align: center;
+
+  @include tablet() {
+    margin: 0 -50px;
+  }
+}
+
+.form-container__description {
+  line-height: 24px;
+  padding-top: 17px;
+  font-size: 13px;
+  color: $text;
+  margin: 0;
+
+  @include tablet() {
+    padding-bottom: 13px;
+  }
+}

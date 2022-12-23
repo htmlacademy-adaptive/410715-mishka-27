@@ -1,15 +1,23 @@
-//Global styles
-@import "./typography/typography.scss";
-@import "./global/global.scss";
-@import "./global/color.scss";
-
 // Utils
 @import "./utils/visually-hidden.scss";
 @import "./utils/list-reset.scss";
 @import "./utils/link-reset";
+@import "./utils/input-reset.scss";
+
+//Global styles
+@import "./global/mixins.scss";
+@import "./global/fonts.scss";
+@import "./global/color.scss";
+@import "./typography/typography.scss";
+@import "./global/global.scss";
+@import "./global/container.scss";
 
 // Components
 @import "./components/button.scss";
+@import "./components/wave.scss";
+@import "./components/input";
+@import "./components/input-radio.scss";
+@import "./components/input-checkbox.scss";
 
 // Block styles
 @import "./blocks/info.scss";
@@ -22,3 +30,9 @@
 @import "./blocks/product.scss";
 @import "./blocks/video.scss";
 @import "./blocks/production.scss";
+@import "./blocks/copyright.scss";
+@import "./blocks/social.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/slider.scss";
+@import "./blocks/form-container.scss";
+@import "./blocks/group.scss";

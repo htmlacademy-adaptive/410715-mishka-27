@@ -1,15 +1,62 @@
+.promo {
+  padding-top: 31px;
+
+  @include tablet() {
+    display: grid;
+    grid-template-columns: 292px auto;
+    grid-template-areas: "pt pst" "pd pim" "pl pim" "pp pim";
+    margin-top: 40px;
+  }
+
+  @include desktop() {
+    grid-template-columns: auto 292px auto;
+    grid-template-areas: "pst pt pim" "pst pd pim" "pst pl pim" "pst pp pim";
+    margin-top: 115px;
+  }
+}
+
+.promo__title {
+  grid-area: pt;
+}
+
 .promo__sub-title {
+  grid-area: pst;
   color: $sub-title;
   font-size: 17px;
   font-weight: 700;
   line-height: 20px;
   margin: 0;
   text-transform: uppercase;
+
+  @include tablet() {
+    width: 100px;
+    margin-left: auto;
+    font-size: 17px;
+    line-height: 17px;
+  }
 }
 
 .promo__description {
+  grid-area: pd;
   line-height: 24px;
-  margin: 0;
+  margin: 17px 0 0 0;
+
+  @include tablet() {
+    margin: 37px 0 0 0;
+  }
+
+  @include desktop() {
+    margin: 35px 0 0 0;
+  }
+}
+
+.promo__list {
+  grid-area: pl;
+  margin-top: 14px;
+
+  @include tablet() {
+    margin-top: 23px;
+  }
 }
 
 .promo__item {
@@ -18,4 +65,36 @@
   line-height: 20px;
   border-bottom: 1px solid $border-item;
   padding: 12px 0;
+}
+
+.promo__item-title {
+  width: 97px;
+}
+
+.promo__image {
+  grid-area: pim;
+  margin-top: 28px;
+
+  @include tablet() {
+    height: 404px;
+    width: 334px;
+    margin-left: auto;
+  }
+
+  @include desktop() {
+    height: 636px;
+    width: 525px;
+    margin-left: auto;
+  }
+}
+
+.promo__price {
+  grid-area: pp;
+  margin-top: 25px;
+}
+
+.promo__price-button {
+  width: 100%;
+  margin-top: 24px;
+  justify-content: center;
 }
