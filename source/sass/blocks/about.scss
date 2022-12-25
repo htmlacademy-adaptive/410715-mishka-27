@@ -29,26 +29,26 @@
   }
 
   &:first-child {
-    background-image: url("../../img/about-images/flower.svg");
+    background-image: url("../img/about-images/flower.svg");
   }
 
   &:nth-child(2) {
-    background-image: url("../../img/about-images/money.svg");
+    background-image: url("../img/about-images/money.svg");
   }
 
   &:nth-child(3) {
-    background-image: url("../../img/about-images/heart.svg");
+    background-image: url("../img/about-images/heart.svg");
   }
 
   &:nth-child(4) {
-    background-image: url("../../img/about-images/threads.svg");
+    background-image: url("../img/about-images/threads.svg");
   }
 
   &:nth-child(5) {
-    background-image: url("../../img/about-images/rocket.svg");
+    background-image: url("../img/about-images/rocket.svg");
   }
 
   &:last-child {
-    background-image: url("../../img/about-images/gift.svg");
+    background-image: url("../img/about-images/gift.svg");
   }
 }

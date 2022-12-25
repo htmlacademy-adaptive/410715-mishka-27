@@ -4,7 +4,7 @@
   @include tablet() {
     margin-top: 82px;
     padding-bottom: 47px;
-    background-image: url("../../img/background-images/reviews-background.jpg");
+    background-image: url("../img/background-images/reviews-background.jpg");
     background-repeat: no-repeat;
     background-position: center left;
   }
@@ -80,7 +80,7 @@
 
 .reviews__prev,
 .reviews__next {
-  background-image: url("../../img/button-images/arrow-button.svg");
+  background-image: url("../img/button-images/arrow-button.svg");
   background-position: center center;
   background-repeat: no-repeat;
   width: 50px;
