@@ -16,6 +16,10 @@
     align-items: center;
     padding-bottom: 50px;
   }
+
+  @include desktop() {
+    padding-left: 170px;
+  }
 }
 
 .form__note {

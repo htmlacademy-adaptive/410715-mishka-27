@@ -1,8 +1,11 @@
 .wave {
   @include tablet() {
-    background-image: url("../img/background-images/wave.svg");
-    background-repeat: no-repeat;
+    background-image: url("../img/background-images/wave-tablet.svg");
+    background-repeat: repeat-x;
     background-position: bottom;
-    background-size: 100%;
+  }
+
+  @include desktop() {
+    background-image: url("../img/background-images/wave-desktop.svg");
   }
 }

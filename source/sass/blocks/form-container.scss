@@ -14,9 +14,12 @@
   padding-top: 17px;
   font-size: 13px;
   color: $text;
-  margin: 0;
 
   @include tablet() {
     padding-bottom: 13px;
+  }
+
+  @include desktop() {
+    margin-left: 170px;
   }
 }

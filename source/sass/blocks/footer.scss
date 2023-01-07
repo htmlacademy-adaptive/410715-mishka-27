@@ -6,6 +6,11 @@
   @include tablet() {
     padding-top: 51px;
     padding-bottom: 58px;
+  }
+}
+
+.footer--position {
+  @include tablet() {
     display: flex;
     justify-content: space-between;
     align-items: center;

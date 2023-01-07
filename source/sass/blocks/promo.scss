@@ -11,12 +11,18 @@
   @include desktop() {
     grid-template-columns: auto 292px auto;
     grid-template-areas: "pst pt pim" "pst pd pim" "pst pl pim" "pst pp pim";
-    margin-top: 115px;
+    padding-top: 71px
   }
 }
 
 .promo__title {
   grid-area: pt;
+
+  @include desktop() {
+    white-space: nowrap;
+    z-index: 1;
+    padding-top: 61px;
+  }
 }
 
 .promo__sub-title {
@@ -33,6 +39,10 @@
     margin-left: auto;
     font-size: 17px;
     line-height: 17px;
+  }
+
+  @include desktop {
+    padding-top: 69px;
   }
 }
 
@@ -85,6 +95,7 @@
     height: 636px;
     width: 525px;
     margin-left: auto;
+    margin-top: 0;
   }
 }
 

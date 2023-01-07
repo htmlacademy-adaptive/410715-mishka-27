@@ -1,14 +1,17 @@
 .contacts {
   padding-top: 89px;
+  padding-bottom: 39px;
   text-align: center;
 
   @include tablet() {
     padding-top: 130px;
+    padding-bottom: 57px;
   }
 
   @include desktop() {
     display: grid;
     padding-top: 161px;
+    padding-bottom: 105px;
     grid-template-columns: auto auto;
   }
 }

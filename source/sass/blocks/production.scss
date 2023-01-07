@@ -9,6 +9,7 @@
 
   @include desktop() {
     padding-top: 57px;
+    padding-bottom: 105px;
     display: grid;
     grid-template-columns: 682px auto;
   }
