@@ -3,12 +3,11 @@
   padding-bottom: 74px;
   text-align: center;
   background-color: $background;
-  margin: 0 -30px;
+  margin: 0;
 
   @include tablet() {
     padding-top: 100px;
     padding-bottom: 75px;
-    margin: 0 -50px;
   }
 
   @include desktop() {
