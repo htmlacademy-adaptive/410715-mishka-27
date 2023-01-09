@@ -46,7 +46,9 @@
 }
 
 .production__video {
-  margin-top: 26px;
+  @include mobile-only() {
+    margin-top: 26px;
+  }
 
   @include desktop() {
     grid-area: 1 / 1 / 4 / 2;

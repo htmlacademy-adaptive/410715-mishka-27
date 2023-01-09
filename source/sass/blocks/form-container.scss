@@ -12,6 +12,8 @@
 
   @include tablet() {
     padding-bottom: 13px;
+    font-size: 17px;
+    line-height: 30px;
   }
 
   @include desktop() {

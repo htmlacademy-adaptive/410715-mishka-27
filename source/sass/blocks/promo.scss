@@ -110,6 +110,10 @@
 .promo__price {
   grid-area: pp;
   margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .promo__price-button {

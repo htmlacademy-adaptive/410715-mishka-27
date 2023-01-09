@@ -6,6 +6,12 @@
   }
 }
 
+.form__background {
+  @include tablet() {
+    background-color: $color-white-dark;
+  }
+}
+
 .form__footer {
   padding-bottom: 55px;
   margin-top: 17px;

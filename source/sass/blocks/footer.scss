@@ -9,7 +9,7 @@
   }
 }
 
-.footer--position {
+.footer__container {
   @include tablet() {
     display: flex;
     justify-content: space-between;
