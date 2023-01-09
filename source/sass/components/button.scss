@@ -9,7 +9,6 @@
   border: none;
   text-transform: uppercase;
   font-weight: 700;
-  background-color: transparent;
   cursor: pointer;
 
   &--primary {
@@ -17,6 +16,7 @@
     font-size: 18px;
     line-height: 20px;
     border: 2px solid $border;
+    background-color: transparent;
 
     @include tablet() {
       font-size: 17px;
@@ -25,7 +25,9 @@
 
   &--secondary {
     color: $color-white;
+    padding: 18px 20px;
     font-size: 17px;
     line-height: 16px;
+    background-color: $background-button-secondary;
   }
 }
