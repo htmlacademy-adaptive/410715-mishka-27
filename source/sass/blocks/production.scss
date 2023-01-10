@@ -9,6 +9,7 @@
 
   @include desktop() {
     padding-top: 57px;
+    padding-bottom: 105px;
     display: grid;
     grid-template-columns: 682px auto;
   }
@@ -45,7 +46,9 @@
 }
 
 .production__video {
-  margin-top: 26px;
+  @include mobile-only() {
+    margin-top: 26px;
+  }
 
   @include desktop() {
     grid-area: 1 / 1 / 4 / 2;

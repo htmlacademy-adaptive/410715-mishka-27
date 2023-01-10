@@ -3,7 +3,6 @@
   border: none;
   border-top: 1px solid $border-field;
   padding: 30px 0;
-  margin: 0;
 
   @include tablet() {
     border-top: none;
@@ -20,6 +19,12 @@
   padding-bottom: 35px;
 }
 
+.group--name input {
+  @include tablet() {
+    margin-left: 24px;
+  }
+}
+
 .group--phone {
   padding-top: 0;
   padding-bottom: 35px;
@@ -30,20 +35,35 @@
   }
 }
 
+.group--phone input {
+  background-image: url("../img/about-images/input-phone.svg");
+  background-repeat: no-repeat;
+  background-position: center right 7px;
+
+  @include tablet() {
+    background-position: center right 26px;
+  }
+
+  @include desktop() {
+    background-position: center right 8px;
+  }
+}
+
 .group--email {
   padding-top: 0;
 }
 
-.group--background {
-  @include tablet() {
-    background-color: $color-white-dark;
-    margin: 0 -50px;
-    padding-left: 219px;
-    padding-right: 50px;
+.group--email input {
+  background-image: url("../img/about-images/input-mail.svg");
+  background-repeat: no-repeat;
+  background-position: center right 3px;
 
-    .group__title {
-      left: 50px;
-    }
+  @include tablet() {
+    background-position: center right 22px;
+  }
+
+  @include desktop() {
+    background-position: center right 4px;
   }
 }
 
@@ -72,6 +92,10 @@
     top: 73px;
     left: 0;
   }
+
+  @include desktop() {
+    left: 47px;
+  }
 }
 
 .group__title--email {
@@ -98,6 +122,7 @@
   }
 }
 
+
 .input-radio:not(:first-of-type) {
   margin-top: 11px;
 
@@ -113,7 +138,7 @@
   left: 7px;
   width: 23px;
   height: 16px;
-  background-image: url("../../img/background-images/checked.svg");
+  background-image: url("../img/background-images/checked.svg");
   background-repeat: no-repeat;
   background-position: center;
 
@@ -133,10 +158,7 @@
   border: 2px solid $color-black;
   padding: 17px;
   box-sizing: border-box;
-
-  @include desktop() {
-    max-width: 700px;
-  }
+  resize: vertical;
 }
 
 .group--table {

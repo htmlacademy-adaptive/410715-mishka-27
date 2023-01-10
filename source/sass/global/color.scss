@@ -7,6 +7,8 @@ $color-aqua-dark: #56c3b2;
 $color-gray: #f9f9f9;
 $color-gray-dark: #444444;
 $color-gray-light: #e5e5e5;
+$color-name: #ececec;
+$color-silver: #c6c6c6;
 
 // Background
 $background: rgba($color-white-dark, 1);
@@ -23,7 +25,8 @@ $placeholder: rgba($base-color, 0.3);
 $border: rgba($color-gray-dark, 1);
 $border-field: rgba($color-aqua, 1);
 $border-item: rgba($color-gray-light, 1);
+$border-item-catalog: rgba($color-name, 1);
 
 // Background button
-$background-button-info-first: rgba($color-aqua, 1);
+$background-button-secondary: rgba($color-aqua, 1);
 $background-button-info-second: rgba($color-aqua-dark, 1);

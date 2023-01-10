@@ -1,17 +1,21 @@
 .reviews {
+  background-repeat: repeat-x;
+  background-position: bottom;
   padding-top: 58px;
+  padding-bottom: 45px;
 
   @include tablet() {
     margin-top: 82px;
     padding-bottom: 47px;
-    background-image: url("../../img/background-images/reviews-background.jpg");
+    background-image: url("../img/background-images/reviews-background.jpg");
     background-repeat: no-repeat;
     background-position: center left;
+    margin-bottom: 68px;
   }
 
   @include desktop() {
-    margin: 90px auto 0 auto;
-    padding: 78px 50px 47px 50px;
+    margin: 90px auto 68px auto;
+    padding: 78px 50px 47px 224px;
   }
 }
 
@@ -80,7 +84,7 @@
 
 .reviews__prev,
 .reviews__next {
-  background-image: url("../../img/button-images/arrow-button.svg");
+  background-image: url("../img/button-images/arrow-button.svg");
   background-position: center center;
   background-repeat: no-repeat;
   width: 50px;

@@ -1,12 +1,13 @@
 .about {
-  padding-top: 72px;
+  padding-top: 31px;
 
   @include tablet() {
-    padding-top: 124px;
+    padding-top: 55px;
   }
 
   @include desktop() {
-    padding-top: 164px;
+    padding-top: 68px;
+    padding-left: 224px;
   }
 }
 
@@ -20,7 +21,7 @@
 .about__item {
   line-height: 20px;
   padding: 82px 0 0 0;
-  background-position: center left 8px;
+  background-position: top 28px left 8px;
   background-repeat: no-repeat;
 
   @include tablet() {
@@ -29,26 +30,26 @@
   }
 
   &:first-child {
-    background-image: url("../../img/about-images/flower.svg");
+    background-image: url("../img/about-images/flower.svg");
   }
 
   &:nth-child(2) {
-    background-image: url("../../img/about-images/money.svg");
+    background-image: url("../img/about-images/money.svg");
   }
 
   &:nth-child(3) {
-    background-image: url("../../img/about-images/heart.svg");
+    background-image: url("../img/about-images/heart.svg");
   }
 
   &:nth-child(4) {
-    background-image: url("../../img/about-images/threads.svg");
+    background-image: url("../img/about-images/threads.svg");
   }
 
   &:nth-child(5) {
-    background-image: url("../../img/about-images/rocket.svg");
+    background-image: url("../img/about-images/rocket.svg");
   }
 
   &:last-child {
-    background-image: url("../../img/about-images/gift.svg");
+    background-image: url("../img/about-images/gift.svg");
   }
 }
