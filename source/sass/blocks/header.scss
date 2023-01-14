@@ -1,24 +1,26 @@
 .header {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 79px;
+  width: 100%;
 
   @include tablet() {
-    text-align: left;
+    justify-content: start;
     height: 88px;
     border-bottom: 1px solid rgba($color-black, 0.1);
   }
 
   @include desktop() {
-    text-align: center;
+    justify-content: center;
   }
 }
 
 .header__logo {
   display: inline-block;
-  margin: 0 auto;
   z-index: 2;
 
-  @include desktop() {
-    margin-top: -5px;
+  @include tablet-only() {
+    margin-left: 50px;
   }
 }
