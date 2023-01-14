@@ -94,16 +94,27 @@
   margin-top: 28px;
 
   @include tablet() {
+    margin-left: auto;
+  }
+
+  @include desktop() {
+    margin-top: 0;
+  }
+}
+
+.promo__image-item {
+  margin-top: 28px;
+  width: 260px;
+  height: 315px;
+
+  @include tablet() {
     height: 404px;
     width: 334px;
-    margin-left: auto;
   }
 
   @include desktop() {
     height: 636px;
     width: 525px;
-    margin-left: auto;
-    margin-top: 0;
   }
 }
 

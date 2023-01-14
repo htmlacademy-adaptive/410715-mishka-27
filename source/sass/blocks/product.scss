@@ -54,17 +54,23 @@
 
 .product__image {
   display: block;
+  width: 260px;
+  height: 195px;
 
   @include tablet() {
     height: 334px;
     width: 50%;
-    object-fit: cover;
   }
 
   @include desktop() {
     height: 462px;
     width: 316px;
   }
+}
+
+.product__image-item {
+  width: 100%;
+  height: 100%;
 }
 
 .product__description {
