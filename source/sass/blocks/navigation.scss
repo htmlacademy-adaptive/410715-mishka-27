@@ -31,7 +31,7 @@
   }
 }
 
-.navigation__button {
+.navigation-button {
   width: 21px;
   height: 20px;
   background-image: url("../img/button-images/menu-open.svg");
@@ -58,7 +58,7 @@
   }
 }
 
-.navigation__button--close {
+.navigation-button--close {
   background-image: url("../../img/button-images/menu-close.svg");
 }
 
@@ -122,7 +122,7 @@
   }
 }
 
-.secondary-list__item-search {
+.navigation__secondary-list-item--search {
   @include tablet() {
     padding-left: 31px;
     padding-right: 31px;
