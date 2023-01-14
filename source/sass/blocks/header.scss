@@ -1,0 +1,24 @@
+.header {
+  text-align: center;
+  height: 79px;
+
+  @include tablet() {
+    text-align: left;
+    height: 88px;
+    border-bottom: 1px solid rgba($color-black, 0.1);
+  }
+
+  @include desktop() {
+    text-align: center;
+  }
+}
+
+.header__logo {
+  display: inline-block;
+  margin: 0 auto;
+  z-index: 2;
+
+  @include desktop() {
+    margin-top: -5px;
+  }
+}
