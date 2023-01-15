@@ -17,7 +17,7 @@
         </picture>
       </a>
       <!-- При открытом меню, добавляется стиль navigation__button--close -->
-      <button class="navigation-button button navigation-button--close" type="button"><span class="visually-hidden">Открыть\закрыть меню</span></button>
+      <button class="navigation--toggle button navigation--toggle-closed" type="button"><span class="visually-hidden">Открыть\закрыть меню</span></button>
       <!-- При клике на кнопку, добавляется стиль navigation--open -->
       <nav class="navigation navigation--open">
         <ul class="navigation__list navigation__site-list list-reset">
@@ -38,10 +38,12 @@
             </a>
           </li>
           <li class="navigation__secondary-list-item">
-            <svg class="navigation__secondary-list-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="18" fill="none">
-              <path fill="#000" d="M20.188 6.857h-3.55L13.188.381C12.985 0 12.58-.095 12.174.095s-.507.572-.304.953l3.145 5.81H5.783l3.145-5.81c.202-.381 0-.762-.305-.953-.406-.19-.811 0-1.014.286l-3.45 6.476H.812c-.406 0-.812.286-.812.762 0 .381.304.762.812.762h.202l.914 2.857c-.203.095-.305.286-.305.572 0 .38.305.666.71.666L4.058 18h12.884l1.725-5.524c.405 0 .71-.286.71-.667 0-.19-.102-.476-.304-.57l.912-2.858h.203c.406 0 .812-.286.812-.762 0-.476-.406-.762-.812-.762Zm-4.565 9.62H5.073L3.854 12.38h13.087l-1.319 4.095Zm1.623-5.525H3.348l-.812-2.666h15.522l-.812 2.666Z" opacity=".2"/>
-            </svg>
-            <a class="navigation__secondary-list-card link-reset" href="#">Корзина: пока пуста</a>
+            <a class="navigation__secondary-list-card link-reset" href="#">
+              <svg class="navigation__secondary-list-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="18" fill="none">
+                <path fill="#000" d="M20.188 6.857h-3.55L13.188.381C12.985 0 12.58-.095 12.174.095s-.507.572-.304.953l3.145 5.81H5.783l3.145-5.81c.202-.381 0-.762-.305-.953-.406-.19-.811 0-1.014.286l-3.45 6.476H.812c-.406 0-.812.286-.812.762 0 .381.304.762.812.762h.202l.914 2.857c-.203.095-.305.286-.305.572 0 .38.305.666.71.666L4.058 18h12.884l1.725-5.524c.405 0 .71-.286.71-.667 0-.19-.102-.476-.304-.57l.912-2.858h.203c.406 0 .812-.286.812-.762 0-.476-.406-.762-.812-.762Zm-4.565 9.62H5.073L3.854 12.38h13.087l-1.319 4.095Zm1.623-5.525H3.348l-.812-2.666h15.522l-.812 2.666Z" opacity=".2"/>
+              </svg>
+              <span>Корзина: пока пуста</span>
+            </a>
           </li>
         </ul>
         <ul class="navigation__list navigation__dop-list list-reset">
@@ -87,10 +89,9 @@
           </div>
         </dl>
         <picture class="promo__image">
-          <source media="(min-width: 1150px) and (min-resolution: 2dppx)" srcset="img/products/recommended-product-desktop@2x.jpg">
-          <source media="(min-width: 768px) and (min-resolution: 2dppx)" srcset="img/products/recommended-product-tablet@2x.jpg">
-          <source media="(min-resolution: 2dppx)" srcset="img/products/recommended-product-mobile@2x.jpg">
-          <img class="promo__image-item" src="./img/products/recommended-product.jpg" alt="Рекомендованный товар">
+          <source media="(min-width: 1150px)" srcset="img/products/promo-desktop.jpg 1x, img/products/promo-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/products/promo-tablet@2x.jpg 1x, img/products/promo-tablet@2x.jpg 2x">
+          <img class="promo__image-item" src="./img/products/promo-mobile.jpg" srcset="img/products/promo-mobile@2x.jpg 2x" width="260" height="315" alt="Рекомендованный товар">
         </picture>
         <div class="promo__price">
           <p class="title title--little">Цена: 990 руб.</p>

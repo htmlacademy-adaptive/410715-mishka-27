@@ -3,13 +3,31 @@
   align-items: center;
   justify-content: center;
   height: 150px;
-  background-image: url("../img/catalog-images/video-promo.png");
+  background-image: url("../img/catalog-images/video-mobile.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center center;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/catalog-images/video-mobile@2x.jpg");
+  }
+
   @include tablet() {
     height: 455px;
+    background-image: url("../img/catalog-images/video-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog-images/video-tablet@2x.jpg");
+    }
+  }
+
+  @include desktop() {
+    height: 455px;
+    background-image: url("../img/catalog-images/video-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog-images/video-desktop@2x.jpg");
+    }
   }
 }
 

@@ -13,7 +13,6 @@
   @include tablet() {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 88px 88px;
     position: absolute;
     top: 0;
     left: 0;
@@ -31,14 +30,15 @@
   }
 }
 
-.navigation-button {
+.navigation--toggle {
   width: 21px;
   height: 20px;
   background-image: url("../img/button-images/menu-open.svg");
   background-repeat: no-repeat;
   background-position: center center;
   position: absolute;
-  top: 25px;
+  top: 50%;
+  transform: translateY(-50%);
   right: 30px;
 
   @include tablet() {
@@ -51,14 +51,14 @@
     display: flex;
     z-index: 1;
     position: absolute;
-    top: 80px;
+    top: 100%;
     left: 0;
     right: 0;
     background-color: $color-white;
   }
 }
 
-.navigation-button--close {
+.navigation--toggle-closed {
   background-image: url("../../img/button-images/menu-close.svg");
 }
 

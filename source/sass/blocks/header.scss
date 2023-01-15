@@ -1,13 +1,11 @@
 .header {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 79px;
-  width: 100%;
 
   @include tablet() {
     justify-content: start;
-    height: 88px;
     border-bottom: 1px solid rgba($color-black, 0.1);
   }
 
@@ -19,8 +17,15 @@
 .header__logo {
   display: inline-block;
   z-index: 2;
+  padding: 17px 0;
 
   @include tablet-only() {
     margin-left: 50px;
+    padding: 16px 0;
+  }
+
+  @include desktop() {
+    padding: 0;
+    padding-top: 7px;
   }
 }
