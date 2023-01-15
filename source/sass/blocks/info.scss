@@ -5,14 +5,29 @@
   background-position: center top;
   background-color: $color-gray;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background-images/info-mobile@2x.png");
+    background-size: 320px auto;
+  }
+
   @include tablet() {
     background-image: url("../img/background-images/info-tablet.png");
     background-position: center bottom;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background-images/info-tablet@2x.png");
+      background-size: 768px auto;
+    }
   }
 
   @include desktop() {
     background-image: url("../img/background-images/info-desktop.png");
     background-position: center bottom 25px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background-images/info-desktop@2x.png");
+      background-size: 1150px auto;
+    }
   }
 }
 

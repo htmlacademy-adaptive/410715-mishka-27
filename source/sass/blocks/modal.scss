@@ -1,12 +1,12 @@
 .modal {
+  display: none;
   position: fixed;
   height: 100%;
   width: 100%;
   background: rgba($color-white, 0.9);
-  z-index: 1;
+  z-index: 3;
   top: 0;
   left: 0;
-  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -16,6 +16,7 @@
   border: 1px solid $color-silver;
   box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
   background: rgba($color-white, 1);
+  width: 100%;
   max-width: 566px;
   padding: 30px 29px 46px 29px;
   box-sizing: border-box;
@@ -93,13 +94,6 @@
   border-color: $color-aqua;
 }
 
-.modal--closed {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+.modal--open {
+  display: flex;
 }

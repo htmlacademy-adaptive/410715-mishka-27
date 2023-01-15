@@ -10,13 +10,13 @@
   text-transform: uppercase;
   font-weight: 700;
   cursor: pointer;
+  background-color: transparent;
 
   &--primary {
     padding: 14px 20px;
     font-size: 18px;
     line-height: 20px;
     border: 2px solid $border;
-    background-color: transparent;
 
     @include tablet() {
       font-size: 17px;

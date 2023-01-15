@@ -1,0 +1,31 @@
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include tablet() {
+    justify-content: start;
+    border-bottom: 1px solid rgba($color-black, 0.1);
+  }
+
+  @include desktop() {
+    justify-content: center;
+  }
+}
+
+.header__logo {
+  display: inline-block;
+  z-index: 2;
+  padding: 17px 0;
+
+  @include tablet-only() {
+    margin-left: 50px;
+    padding: 16px 0;
+  }
+
+  @include desktop() {
+    padding: 0;
+    padding-top: 7px;
+  }
+}
