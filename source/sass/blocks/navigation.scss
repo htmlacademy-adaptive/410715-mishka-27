@@ -2,9 +2,6 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 
   @include mobile-only() {
     display: none;
@@ -22,11 +19,19 @@
     z-index: 1;
     padding: 0 50px;
     margin: 0 auto;
-    grid-template-areas: "sec-list sec-list" "site-list deliv";
+    grid-template-areas: "secondary secondary" "primary text";
   }
 
   @include desktop() {
-    grid-template-areas: "site-list sec-list" "dop-list deliv";
+    grid-template-areas: "primary secondary" "extra text";
+  }
+}
+
+.navigation__item {
+  @include mobile-only() {
+    position: relative;
+    background-color: $color-white;
+    padding: 28px 30px 26px 25%;
   }
 }
 
@@ -48,7 +53,7 @@
 
 .navigation--open {
   @include mobile-only() {
-    display: flex;
+    display: block;
     z-index: 1;
     position: absolute;
     top: 100%;
@@ -74,114 +79,102 @@
   }
 }
 
-.navigation__site-list {
-  grid-area: site-list;
-
-  @include tablet-only() {
-    font-size: 15px;
-  }
-}
-
-.navigation__site-list-item {
-  @include tablet-only() {
-    width: 167px;
-  }
-
-  @include desktop() {
-    &:not(:first-of-type) {
-      padding-left: 35px;
-    }
-
-    &:first-of-type {
-      padding-right: 40px;
-      border-right: 1px solid rgba($color-black, 0.1);
-      height: 100%;
-      align-items: center;
-      display: flex;
-    }
-  }
-}
-
-.navigation__site-list-item,
-.navigation__secondary-list-item {
-  @include mobile-only() {
-    position: relative;
-    padding-top: 27px;
-    padding-bottom: 27px;
-    padding-left: 30%;
-    border-top: 1px solid rgba($color-black, 0.1);
-    border-bottom: 1px solid rgba($color-black, 0.1);
-  }
-}
-
-.navigation__secondary-list-icon {
+.navigation__icon {
   @include mobile-only() {
     position: absolute;
-    top: 32px;
+    top: 50%;
+    transform: translateY(-50%);
     left: 30px;
   }
 }
 
-.navigation__secondary-list-item--search {
-  @include tablet() {
-    padding-left: 31px;
-    padding-right: 31px;
-    border-left: 1px solid rgba($color-black, 0.1);
-    border-right: 1px solid rgba($color-black, 0.1);
-    height: 100%;
-    align-items: center;
-    display: flex;
-    margin-right: 31px;
-  }
+.navigation--primary {
+  grid-area: primary;
+}
 
+.navigation--primary .navigation__item {
   @include desktop() {
-    padding-left: 32px;
-    padding-right: 32px;
+    &:not(:first-of-type) {
+      border-left: 1px solid rgba($color-black, 0.1);
+    }
+
+    &:first-of-type .navigation__link {
+      padding-left: 0;
+    }
   }
 }
 
-.navigation__secondary-list {
-  grid-area: sec-list;
+.navigation--primary .navigation__link {
+  @include tablet-only() {
+    font-size: 15px;
+    padding-top: 20px;
+    width: 167px;
+  }
+
+  @include desktop() {
+    padding: 32px 26px 31px 26px;
+  }
+}
+
+.navigation--secondary {
+  grid-area: secondary;
 
   @include tablet() {
     margin-left: auto;
   }
 }
 
-.navigation__secondary-list-card {
+.navigation__link {
   @include tablet() {
-    padding-left: 30px;
+    display: flex;
   }
 }
 
-.navigation__secondary-list-text {
+.navigation__icon--search {
+  @include tablet() {
+    padding: 36px 31px 34px;
+    border-left: 1px solid rgba($color-black, 0.1);
+    border-right: 1px solid rgba($color-black, 0.1);
+  }
+}
+
+.navigation__icon--cart {
+  @include tablet() {
+    padding-left: 31px;
+    padding-right: 25px;
+  }
+}
+
+.navigation--secondary-text {
   @include tablet() {
     display: none;
   }
 }
 
-.navigation__dop-list {
+.navigation--extra {
   display: none;
-  grid-area: dop-list;
+  grid-area: extra;
 
   @include desktop() {
     display: flex;
+    font-size: 15px;
   }
 }
 
-.navigation__dop-list-item {
-  @include desktop() {
-    &:not(:first-of-type) {
-      margin-left: 45px;
-    }
+.navigation--extra .navigation__item {
+  padding-top: 20px;
+
+  &:not(:first-of-type) {
+    margin-left: 45px;
   }
 }
 
-.navigation__delivery {
+.navigation__text {
   font-weight: normal;
   margin-left: auto;
-  grid-area: deliv;
+  grid-area: text;
   font-size: 15px;
+  padding-top: 20px;
 
   @include mobile-only() {
     display: none;
