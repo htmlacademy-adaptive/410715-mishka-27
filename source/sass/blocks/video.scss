@@ -37,4 +37,14 @@
   background: url("../img/button-images/play.svg") no-repeat;
   border-radius: 19px;
   border: none;
+
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.8);
+    opacity: 0.6;
+  }
 }

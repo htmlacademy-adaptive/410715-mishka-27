@@ -81,6 +81,19 @@
 
 .contacts__item-description {
   margin: 0;
+
+  &--email {
+    text-decoration: underline $color-aqua;
+
+    &:hover {
+      color: $color-aqua;
+    }
+
+    &:active {
+      color: $color-aqua;
+      text-decoration: underline rgba($color-aqua, 0.1);
+    }
+  }
 }
 
 .contacts__map {

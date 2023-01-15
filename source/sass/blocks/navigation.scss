@@ -33,9 +33,26 @@
     background-color: $color-white;
     padding: 28px 30px 26px 25%;
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
-.navigation--toggle {
+.navigation__item:hover .navigation__icon {
+  fill: $color-aqua;
+  opacity: 1;
+}
+
+.navigation__item:active .navigation__icon {
+  fill: $color-aqua;
+}
+
+.navigation__toggle {
   width: 21px;
   height: 20px;
   background-image: url("../img/button-images/menu-open.svg");
@@ -63,7 +80,7 @@
   }
 }
 
-.navigation--toggle-closed {
+.navigation__toggle--closed {
   background-image: url("../../img/button-images/menu-close.svg");
 }
 
@@ -88,11 +105,11 @@
   }
 }
 
-.navigation--primary {
+.navigation__list--primary {
   grid-area: primary;
 }
 
-.navigation--primary .navigation__item {
+.navigation__list--primary .navigation__item {
   @include desktop() {
     &:not(:first-of-type) {
       border-left: 1px solid rgba($color-black, 0.1);
@@ -104,7 +121,7 @@
   }
 }
 
-.navigation--primary .navigation__link {
+.navigation__list--primary .navigation__link {
   @include tablet-only() {
     font-size: 15px;
     padding-top: 20px;
@@ -116,7 +133,7 @@
   }
 }
 
-.navigation--secondary {
+.navigation__list--secondary {
   grid-area: secondary;
 
   @include tablet() {
@@ -131,6 +148,13 @@
 }
 
 .navigation__icon--search {
+  @include mobile-only() {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 30px;
+  }
+
   @include tablet() {
     padding: 36px 31px 34px;
     border-left: 1px solid rgba($color-black, 0.1);
@@ -139,19 +163,26 @@
 }
 
 .navigation__icon--cart {
+  @include mobile-only() {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 30px;
+  }
+
   @include tablet() {
     padding-left: 31px;
     padding-right: 25px;
   }
 }
 
-.navigation--secondary-text {
+.navigation__item-text {
   @include tablet() {
     display: none;
   }
 }
 
-.navigation--extra {
+.navigation__list--extra {
   display: none;
   grid-area: extra;
 
@@ -161,7 +192,7 @@
   }
 }
 
-.navigation--extra .navigation__item {
+.navigation__list--extra .navigation__item {
   padding-top: 20px;
 
   &:not(:first-of-type) {

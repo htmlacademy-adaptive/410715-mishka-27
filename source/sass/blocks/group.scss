@@ -159,6 +159,15 @@
   padding: 17px;
   box-sizing: border-box;
   resize: vertical;
+
+  &:hover {
+    border-color: $color-aqua;
+  }
+
+  &:active,
+  &:focus {
+    border-color: rgba($color-aqua, 0.6);
+  }
 }
 
 .group--table {

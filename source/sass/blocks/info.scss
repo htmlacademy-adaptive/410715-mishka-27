@@ -93,10 +93,16 @@
     width: 50%;
     box-sizing: border-box;
   }
+
+  &:hover,
+  &:active {
+    transform: scale(1, 1.05);
+  }
 }
 
+
 .info__button--lamp {
-  background-color: $color-aqua;
+  background-color: $color-aqua-light;
   background-image: url("../img/button-images/lamp.svg");
   background-repeat: no-repeat;
   background-position: top 23px right 36px;
@@ -104,10 +110,14 @@
   @include tablet() {
     background-position: top 30px right 36px;
   }
+
+  &:hover {
+    background-color: $color-aqua-dark;
+  }
 }
 
 .info__button--cube {
-  background-color: $color-aqua-dark;
+  background-color: $color-aqua;
   background-image: url("../img/button-images/cube.svg");
   background-repeat: no-repeat;
   background-position: top 21px right 27px;
@@ -118,5 +128,9 @@
 
   @include desktop() {
     background-position: top 31px right 35px;
+  }
+
+  &:hover {
+    background-color: $color-aqua-dark2;
   }
 }

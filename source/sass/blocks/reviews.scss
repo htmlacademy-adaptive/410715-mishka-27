@@ -96,6 +96,14 @@
   height: 26px;
   padding: 0;
   outline: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .reviews__prev {

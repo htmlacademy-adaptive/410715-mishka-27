@@ -25,6 +25,16 @@
   }
 }
 
+.footer__logo-img {
+  &:hover {
+    fill: $color-aqua;
+  }
+
+  &:active {
+    fill: rgba($color-aqua, 0.3);
+  }
+}
+
 .footer__copyright {
   padding-top: 22px;
 
