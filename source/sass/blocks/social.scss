@@ -4,7 +4,8 @@
   width: 142px;
 }
 
-.social__link:hover .social__link-img {
+.social__link:hover .social__link-img,
+.social__link:focus-within .social__link-img {
   fill: $color-aqua;
 }
 

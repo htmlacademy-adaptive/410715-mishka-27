@@ -34,7 +34,8 @@
     padding: 28px 30px 26px 25%;
   }
 
-  &:hover {
+  &:hover,
+  &:focus-within {
     opacity: 0.6;
   }
 
@@ -43,7 +44,8 @@
   }
 }
 
-.navigation__item:hover .navigation__icon {
+.navigation__item:hover .navigation__icon,
+.navigation__item:focus-within .navigation__icon {
   fill: $color-aqua;
   opacity: 1;
 }

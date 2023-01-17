@@ -13,7 +13,8 @@
     color: $placeholder;
   }
 
-  &:hover {
+  &:hover,
+  &:focus-within {
     border-color: rgba($color-aqua, 0.6);
   }
 

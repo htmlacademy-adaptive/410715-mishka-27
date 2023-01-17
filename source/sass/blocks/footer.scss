@@ -26,7 +26,8 @@
 }
 
 .footer__logo-img {
-  &:hover {
+  &:hover,
+  &:focus-within {
     fill: $color-aqua;
   }
 

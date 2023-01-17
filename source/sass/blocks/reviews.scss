@@ -97,7 +97,8 @@
   padding: 0;
   outline: none;
 
-  &:hover {
+  &:hover,
+  &:focus-within {
     opacity: 0.6;
   }
 

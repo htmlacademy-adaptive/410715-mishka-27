@@ -36,7 +36,8 @@
     flex-direction: column;
   }
 
-  &:hover {
+  &:hover,
+  &:focus-within {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
   }
 
@@ -61,7 +62,8 @@
 }
 
 .product__title {
-  &:hover {
+  &:hover,
+  &:focus-within {
     opacity: 0.6;
   }
 
@@ -138,7 +140,8 @@
   padding: 0;
 }
 
-.product__button:hover .product__button-img {
+.product__button:hover .product__button-img,
+.product__button:focus-within .product__button-img {
   fill: $color-aqua;
   opacity: 1;
 }

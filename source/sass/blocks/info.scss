@@ -95,7 +95,8 @@
   }
 
   &:hover,
-  &:active {
+  &:active,
+  &:focus-within {
     transform: scale(1, 1.05);
   }
 }
@@ -111,7 +112,8 @@
     background-position: top 30px right 36px;
   }
 
-  &:hover {
+  &:hover,
+  &:focus-within {
     background-color: $color-aqua-dark;
   }
 }
@@ -130,7 +132,8 @@
     background-position: top 31px right 35px;
   }
 
-  &:hover {
+  &:hover,
+  &:focus-within {
     background-color: $color-aqua-dark2;
   }
 }

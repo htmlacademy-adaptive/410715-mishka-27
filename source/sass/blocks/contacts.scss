@@ -85,7 +85,8 @@
   &--email {
     text-decoration: underline $color-aqua;
 
-    &:hover {
+    &:hover,
+    &:focus-within {
       color: $color-aqua;
     }
 

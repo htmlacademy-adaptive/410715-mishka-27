@@ -39,7 +39,8 @@
   border: none;
 
 
-  &:hover {
+  &:hover,
+  &:focus-within {
     transform: scale(1.2);
   }
 
