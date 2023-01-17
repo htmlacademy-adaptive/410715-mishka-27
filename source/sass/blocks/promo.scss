@@ -39,7 +39,7 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 20px;
-  margin: 0;
+  margin: 5px 0 0;
   text-transform: uppercase;
 
   @include tablet() {
@@ -70,7 +70,7 @@
 
 .promo__list {
   grid-area: pl;
-  margin-top: 14px;
+  margin-top: 16px;
 
   @include tablet() {
     margin-top: 23px;
@@ -82,7 +82,11 @@
   display: flex;
   line-height: 20px;
   border-bottom: 1px solid $border-item;
-  padding: 12px 0;
+  padding: 10px 0;
+}
+
+.promo__item-description {
+  margin: 0;
 }
 
 .promo__item-title {
