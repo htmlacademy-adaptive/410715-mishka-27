@@ -6,6 +6,14 @@
   @include tablet() {
     border: none;
   }
+
+  &:hover &__link {
+    opacity: 0.6;
+  }
+
+  &:active &__link {
+    opacity: 0.3;
+  }
 }
 
 .copyright__text {
