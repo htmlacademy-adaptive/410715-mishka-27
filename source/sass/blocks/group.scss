@@ -159,13 +159,13 @@
   padding: 17px;
   box-sizing: border-box;
   resize: vertical;
+  outline: none;
 
   &:hover,
-  &:focus-within {
+  &:focus-visible {
     border-color: $color-aqua;
   }
 
-  &:active,
   &:focus {
     border-color: rgba($color-aqua, 0.6);
   }

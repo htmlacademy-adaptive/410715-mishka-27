@@ -27,11 +27,11 @@
 
 .footer__logo-img {
   &:hover,
-  &:focus-within {
+  &:focus-visible {
     fill: $color-aqua;
   }
 
-  &:active {
+  &:focus {
     fill: rgba($color-aqua, 0.3);
   }
 }

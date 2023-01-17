@@ -37,11 +37,11 @@
   }
 
   &:hover,
-  &:focus-within {
+  &:focus-visible {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
   }
 
-  &:active {
+  &:focus {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   }
 }
@@ -63,11 +63,11 @@
 
 .product__title {
   &:hover,
-  &:focus-within {
+  &:focus-visible {
     opacity: 0.6;
   }
 
-  &:active {
+  &:focus {
     opacity: 0.3;
   }
 }
@@ -141,12 +141,12 @@
 }
 
 .product__button:hover .product__button-img,
-.product__button:focus-within .product__button-img {
+.product__button:focus-visible .product__button-img {
   fill: $color-aqua;
   opacity: 1;
 }
 
-.product__button:active .product__button-img {
+.product__button:focus .product__button-img {
   fill: $color-aqua;
   opacity: 0.3;
 }

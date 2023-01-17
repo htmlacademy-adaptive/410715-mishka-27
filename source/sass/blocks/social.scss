@@ -4,11 +4,14 @@
   width: 142px;
 }
 
-.social__link:hover .social__link-img,
-.social__link:focus-within .social__link-img {
-  fill: $color-aqua;
-}
+.social__link {
+  color: $color-black;
 
-.social__link:active .social__link-img {
-  fill: rgba($color-aqua, 0.3);
+  &:hover {
+    color: $color-aqua;
+  }
+
+  &:focus {
+    color: rgba($color-aqua, 0.3);
+  }
 }

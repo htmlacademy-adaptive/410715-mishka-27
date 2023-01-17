@@ -86,11 +86,11 @@
     text-decoration: underline $color-aqua;
 
     &:hover,
-    &:focus-within {
+    &:focus-visible {
       color: $color-aqua;
     }
 
-    &:active {
+    &:focus {
       color: $color-aqua;
       text-decoration: underline rgba($color-aqua, 0.1);
     }

@@ -7,13 +7,17 @@
     border: none;
   }
 
-  &:hover &__link,
-  &:focus-within &__link {
-    opacity: 0.6;
-  }
+  &__link {
+    color: $color-aqua;
 
-  &:active &__link {
-    opacity: 0.3;
+    &:hover,
+    &:focus-visible {
+      opacity: 0.6;
+    }
+
+    &:focus {
+      opacity: 0.3;
+    }
   }
 }
 

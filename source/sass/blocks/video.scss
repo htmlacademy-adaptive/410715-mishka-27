@@ -49,11 +49,11 @@
 
 
   &:hover,
-  &:focus-within {
+  &:focus-visible {
     transform: scale(1.2);
   }
 
-  &:active {
+  &:focus {
     transform: scale(0.8);
     opacity: 0.6;
   }

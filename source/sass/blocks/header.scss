@@ -30,11 +30,11 @@
   }
 
   &:hover,
-  &:focus-within {
+  &:focus-visible {
     opacity: 0.6;
   }
 
-  &:active {
+  &:focus {
     opacity: 0.3;
   }
 }

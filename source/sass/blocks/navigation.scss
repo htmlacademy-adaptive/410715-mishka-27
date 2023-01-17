@@ -35,22 +35,22 @@
   }
 
   &:hover,
-  &:focus-within {
+  &:focus-visible {
     opacity: 0.6;
   }
 
-  &:active {
+  &:focus {
     opacity: 0.3;
   }
 }
 
 .navigation__item:hover .navigation__icon,
-.navigation__item:focus-within .navigation__icon {
+.navigation__item:focus-visible .navigation__icon {
   fill: $color-aqua;
   opacity: 1;
 }
 
-.navigation__item:active .navigation__icon {
+.navigation__item:focus .navigation__icon {
   fill: $color-aqua;
 }
 

@@ -95,8 +95,8 @@
   }
 
   &:hover,
-  &:active,
-  &:focus-within {
+  &:focus,
+  &:focus-visible {
     transform: scale(1, 1.05);
   }
 }
@@ -113,7 +113,7 @@
   }
 
   &:hover,
-  &:focus-within {
+  &:focus-visible {
     background-color: $color-aqua-dark;
   }
 }
@@ -133,7 +133,7 @@
   }
 
   &:hover,
-  &:focus-within {
+  &:focus-visible {
     background-color: $color-aqua-dark2;
   }
 }
