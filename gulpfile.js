@@ -22,7 +22,7 @@ export const styles = () => {
     autoprefixer(),
     csso()
   ]))
-  .pipe(rename('style.min.css'))
+  .pipe(rename('style.css'))
   .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
   .pipe(browser.stream());
   }
@@ -68,7 +68,7 @@ const createWebp = () => {
 // SVG
 
 const svg = () =>
-  gulp.src(['source/img/*.svg', '!source/img/icons/*.svg'])
+  gulp.src(['source/img/**/*.svg'])
   .pipe(svgo())
   .pipe(gulp.dest('build/img'));
 
