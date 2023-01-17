@@ -1,13 +1,13 @@
 .promo {
   padding-top: 31px;
   padding-bottom: 36px;
-  background-image: url("../img/background-images/wave2-mobile.svg");
+  background-image: url("../img/background-images/wave2-mobile.png");
   background-repeat: repeat-x;
   background-position: bottom;
 
   @include tablet() {
     display: grid;
-    background-image: url("../img/background-images/wave2-tablet.svg");
+    background-image: url("../img/background-images/wave2-tablet.png");
     grid-template-columns: 292px auto;
     grid-template-areas: "pt pst" "pd pim" "pl pim" "pp pim";
     margin-top: 40px;
@@ -15,7 +15,7 @@
   }
 
   @include desktop() {
-    background-image: url("../img/background-images/wave2-desktop.svg");
+    background-image: url("../img/background-images/wave2-desktop.png");
     grid-template-columns: auto 292px auto;
     grid-template-areas: "pst pt pim" "pst pd pim" "pst pl pim" "pst pp pim";
     padding-top: 71px;

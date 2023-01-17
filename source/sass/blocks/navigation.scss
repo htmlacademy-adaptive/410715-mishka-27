@@ -57,7 +57,7 @@
 .navigation__toggle {
   width: 21px;
   height: 20px;
-  background-image: url("../img/button-images/menu-open.svg");
+  background-image: url("../img/button-images/menu-open.png");
   background-repeat: no-repeat;
   background-position: center center;
   position: absolute;
@@ -83,7 +83,7 @@
 }
 
 .navigation__toggle--closed {
-  background-image: url("../../img/button-images/menu-close.svg");
+  background-image: url("../../img/button-images/menu-close.png");
 }
 
 .navigation__list {

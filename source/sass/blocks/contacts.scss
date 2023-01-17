@@ -2,19 +2,19 @@
   padding-top: 38px;
   padding-bottom: 39px;
   text-align: center;
-  background-image: url("../img/background-images/wave2-mobile.svg");
+  background-image: url("../img/background-images/wave2-mobile.png");
   background-repeat: repeat-x;
   background-position: top;
 
   @include tablet() {
     padding-top: 63px;
     padding-bottom: 57px;
-    background-image: url("../img/background-images/wave2-tablet.svg");
+    background-image: url("../img/background-images/wave2-tablet.png");
   }
 
   @include desktop() {
     display: grid;
-    background-image: url("../img/background-images/wave2-desktop.svg");
+    background-image: url("../img/background-images/wave2-desktop.png");
     padding-top: 71px;
     padding-bottom: 105px;
     padding-left: 224px;
@@ -40,7 +40,7 @@
     content: " ";
     width: 47px;
     height: 81px;
-    background-image: url("../img/background-images/flag.svg");
+    background-image: url("../img/background-images/flag.png");
     background-repeat: no-repeat;
     background-position: center;
   }
