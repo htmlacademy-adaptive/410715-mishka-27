@@ -6,6 +6,19 @@
   @include tablet() {
     border: none;
   }
+
+  &__link {
+    color: $color-aqua;
+
+    &:hover,
+    &:focus-visible {
+      opacity: 0.6;
+    }
+
+    &:focus {
+      opacity: 0.3;
+    }
+  }
 }
 
 .copyright__text {

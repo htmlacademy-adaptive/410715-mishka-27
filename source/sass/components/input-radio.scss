@@ -1,34 +1,44 @@
 .input-radio {
-  display: flex;
-  position: relative;
-  padding-left: 61px;
-  min-height: 42px;
-  align-items: center;
-
-  @include tablet() {
-    min-height: 52px;
-    padding-left: 78px;
-  }
-
-  @include desktop() {
-    padding-left: 80px;
+  &:hover .input-radio__radio,
+  &:focus-visible .input-radio__radio {
+    border-color: $color-aqua;
   }
 }
 
-.input-radio::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: "";
-  border: 2px solid $border;
-  box-sizing: border-box;
+.input-radio__label {
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+.input-radio__radio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 42px;
   width: 42px;
+  border: 2px solid $color-black;
   border-radius: 100%;
+  margin-right: 19px;
 
   @include tablet() {
     height: 52px;
     width: 52px;
+  }
+}
+
+.input-radio__input:checked + .input-radio__radio::before {
+  background-color: $color-aqua;
+  content: "";
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+
+  @include tablet() {
+    height: 23px;
+    width: 23px;
   }
 }
 

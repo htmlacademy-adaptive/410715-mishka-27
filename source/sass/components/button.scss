@@ -21,6 +21,16 @@
     @include tablet() {
       font-size: 17px;
     }
+
+    &:hover,
+    &:focus-within {
+      background-color: $color-gray-dark;
+      color: $color-white;
+    }
+
+    &:active {
+      color: rgba($color-white, 0.3);
+    }
   }
 
   &--secondary {

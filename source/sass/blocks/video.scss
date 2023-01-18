@@ -32,9 +32,29 @@
 }
 
 .video__button {
-  height: 77px;
-  width: 100px;
-  background: url("../img/button-images/play.svg") no-repeat;
+  height: 71px;
+  width: 95px;
   border-radius: 19px;
   border: none;
+  outline: 4px solid $color-white;
+  background-color: $color-aqua;
+  background-image: url("../img/button-images/play.png");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @include desktop() {
+    width: 100px;
+    height: 77px;
+  }
+
+
+  &:hover,
+  &:focus-visible {
+    transform: scale(1.2);
+  }
+
+  &:focus {
+    transform: scale(0.8);
+    opacity: 0.6;
+  }
 }

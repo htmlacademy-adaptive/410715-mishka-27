@@ -28,4 +28,13 @@
     padding: 0;
     padding-top: 7px;
   }
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
 }
