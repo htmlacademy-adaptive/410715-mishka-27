@@ -46,12 +46,12 @@
 
 .navigation__item:hover .navigation__icon,
 .navigation__item:focus-visible .navigation__icon {
-  fill: $color-aqua;
+  color: $color-aqua;
   opacity: 1;
 }
 
 .navigation__item:focus .navigation__icon {
-  fill: $color-aqua;
+  color: $color-aqua;
 }
 
 .navigation__toggle {
