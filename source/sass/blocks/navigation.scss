@@ -61,9 +61,9 @@
   background-repeat: no-repeat;
   background-position: center center;
   position: absolute;
-  top: 50%;
+  top: 49%;
   transform: translateY(-50%);
-  right: 30px;
+  right: 31px;
 
   @include tablet() {
     display: none;
