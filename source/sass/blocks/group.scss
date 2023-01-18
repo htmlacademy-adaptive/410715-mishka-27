@@ -19,7 +19,7 @@
   padding-bottom: 35px;
 }
 
-.group--name input {
+.group--name .input {
   @include tablet() {
     margin-left: 24px;
   }
@@ -35,7 +35,7 @@
   }
 }
 
-.group--phone input {
+.group--phone .input {
   background-image: url("../img/about-images/input-phone.svg");
   background-repeat: no-repeat;
   background-position: center right 7px;
@@ -53,7 +53,7 @@
   padding-top: 0;
 }
 
-.group--email input {
+.group--email .input {
   background-image: url("../img/about-images/input-mail.svg");
   background-repeat: no-repeat;
   background-position: center right 3px;
@@ -101,52 +101,6 @@
 .group__title--email {
   @include tablet() {
     top: 17px;
-  }
-}
-
-.group__radio:checked + .input-radio::after {
-  position: absolute;
-  top: 12px;
-  left: 12px;
-  border-radius: 100%;
-  content: "";
-  width: 18px;
-  height: 18px;
-  background-color: $color-aqua-dark;
-
-  @include tablet() {
-    top: 15px;
-    left: 15px;
-    height: 22px;
-    width: 22px;
-  }
-}
-
-
-.input-radio:not(:first-of-type) {
-  margin-top: 11px;
-
-  @include tablet() {
-    margin-top: 24px;
-  }
-}
-
-.group__checkbox:checked + .input-checkbox::after {
-  position: absolute;
-  content: "";
-  top: 12px;
-  left: 7px;
-  width: 23px;
-  height: 16px;
-  background-image: url("../img/background-images/checked.png");
-  background-repeat: no-repeat;
-  background-position: center;
-
-  @include tablet() {
-    top: 16px;
-    left: 10px;
-    height: 22px;
-    width: 32px;
   }
 }
 

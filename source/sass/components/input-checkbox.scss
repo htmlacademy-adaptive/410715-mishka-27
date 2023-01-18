@@ -1,13 +1,7 @@
 .input-checkbox {
-  display: flex;
-  position: relative;
-  padding-left: 61px;
-  min-height: 38px;
-  align-items: center;
-
-  @include tablet() {
-    min-height: 52px;
-    padding-left: 82px;
+  &:hover .input-checkbox__checkbox,
+  &:focus-visible .input-checkbox__checkbox {
+    border-color: $color-aqua;
   }
 }
 
@@ -19,18 +13,43 @@
   }
 }
 
-.input-checkbox::before {
-  position: absolute;
-  top: 0;
-  left: 0;
+.input-checkbox__label {
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+.input-checkbox__checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   content: "";
   border: 2px solid $border;
-  box-sizing: border-box;
   height: 38px;
   width: 38px;
+  margin-right: 23px;
 
   @include tablet() {
     height: 52px;
     width: 52px;
+    margin-right: 30px;
   }
 }
+
+.input-checkbox__input:checked + .input-checkbox__checkbox::before {
+  content: "";
+  width: 23px;
+  height: 16px;
+  background-image: url("../../img/background-images/checked-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @include tablet() {
+    background-image: url("../../img/background-images/checked-tablet.png");
+    width: 31px;
+    height: 22px;
+  }
+}
+
