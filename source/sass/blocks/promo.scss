@@ -10,7 +10,7 @@
     background-image: url("../img/background-images/wave2-tablet.png");
     grid-template-columns: 292px auto;
     grid-template-areas: "pt pst" "pd pim" "pl pim" "pp pim";
-    margin-top: 40px;
+    padding-top: 39px;
     padding-bottom: 52px;
   }
 
@@ -26,8 +26,11 @@
 .promo__title {
   grid-area: pt;
 
-  @include desktop() {
+  @include tablet() {
     white-space: nowrap;
+  }
+
+  @include desktop() {
     z-index: 1;
     padding-top: 61px;
   }
@@ -50,7 +53,8 @@
   }
 
   @include desktop {
-    padding-top: 69px;
+    padding-top: 52px;
+    padding-right: 30px;
   }
 }
 
@@ -60,7 +64,9 @@
   margin: 17px 0 0 0;
 
   @include tablet() {
-    margin: 37px 0 0 0;
+    font-size: 17px;
+    line-height: 30px;
+    margin-top: 38px;
   }
 
   @include desktop() {
@@ -73,7 +79,7 @@
   margin-top: 16px;
 
   @include tablet() {
-    margin-top: 23px;
+    margin-top: 29px;
   }
 }
 
@@ -99,6 +105,7 @@
 
   @include tablet() {
     margin-left: auto;
+    margin-top: 22px;
   }
 
   @include desktop() {
@@ -129,10 +136,20 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+
+  @include tablet() {
+    margin-top: 44px;
+    display: block;
+    text-align: center;
+  }
 }
 
 .promo__price-button {
   width: 100%;
   margin-top: 24px;
   justify-content: center;
+
+  @include tablet() {
+    margin-top: 32px;
+  }
 }

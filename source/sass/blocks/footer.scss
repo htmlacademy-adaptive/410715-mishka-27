@@ -37,15 +37,15 @@
 }
 
 .footer__copyright {
-  padding-top: 22px;
+  margin-top: 41px;
 
   @include tablet() {
-    padding: 0;
+    margin-top: 0;
   }
 }
 
 .footer__social-list {
-  margin: 0 auto 28px auto;
+  margin: 0 auto;
 
   @include tablet() {
     margin: 0;

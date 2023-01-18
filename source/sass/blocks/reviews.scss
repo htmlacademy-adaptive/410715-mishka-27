@@ -1,11 +1,12 @@
 .reviews {
   background-repeat: repeat-x;
   background-position: bottom;
-  padding-top: 58px;
+  padding-top: 57px;
   padding-bottom: 45px;
 
   @include tablet() {
-    margin-top: 82px;
+    margin-top: 85px;
+    padding-top: 82px;
     padding-bottom: 47px;
     background-image: url("../img/background-images/reviews-background-tablet.jpg");
     background-repeat: no-repeat;
@@ -38,6 +39,12 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+  }
+}
+
+.reviews__list {
+  @include tablet() {
+    margin-top: 24px;
   }
 }
 
@@ -76,14 +83,14 @@
 }
 
 .reviews__buttons {
-  margin-top: 30px;
+  margin-top: 46px;
   text-align: center;
 
   @include tablet() {
     position: absolute;
     z-index: 1;
-    bottom: 0;
-    right: 0;
+    bottom: 3px;
+    right: 18px;
   }
 }
 
@@ -109,6 +116,10 @@
 
 .reviews__prev {
   margin-right: 80px;
+
+  @include tablet() {
+    margin-right: 33px;
+  }
 }
 
 .reviews__next {
@@ -118,7 +129,7 @@
 .reviews__add-review {
   width: 100%;
   justify-content: center;
-  margin-top: 38px;
+  margin-top: 42px;
 
   @include tablet() {
     order: -1;
