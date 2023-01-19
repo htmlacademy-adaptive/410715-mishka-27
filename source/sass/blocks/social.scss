@@ -2,6 +2,10 @@
   display: flex;
   justify-content: space-between;
   width: 142px;
+
+  @include desktop() {
+    margin-top: 7px;
+  }
 }
 
 .social__link {

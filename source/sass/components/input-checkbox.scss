@@ -17,8 +17,13 @@
   display: flex;
   align-items: center;
   font-size: 17px;
-  line-height: 16px;
+  line-height: 18px;
   font-weight: 700;
+
+  @include tablet() {
+    font-size: 19px;
+    line-height: 18px;
+  }
 }
 
 .input-checkbox__checkbox {
@@ -27,9 +32,10 @@
   align-items: center;
   content: "";
   border: 2px solid $border;
-  height: 38px;
-  width: 38px;
-  margin-right: 23px;
+  min-height: 38px;
+  min-width: 38px;
+  margin-right: 21px;
+  box-sizing: border-box;
 
   @include tablet() {
     height: 52px;

@@ -2,11 +2,19 @@
   padding: 74px 0;
   background-color: $color-white-dark;
   text-align: center;
+
+  @include tablet() {
+    padding: 96px 0 86px 0;
+  }
+
+  @include desktop() {
+    padding: 101px 0 114px;
+  }
 }
 
 .form-container__description {
   line-height: 24px;
-  padding-top: 17px;
+  padding-top: 3px;
   font-size: 13px;
   color: $text;
 
@@ -14,9 +22,12 @@
     padding-bottom: 13px;
     font-size: 17px;
     line-height: 30px;
+    margin-top: 52px;
   }
 
   @include desktop() {
-    margin-left: 170px;
+    margin-left: 175px;
+    margin-top: 95px;
+    max-width: 700px;
   }
 }

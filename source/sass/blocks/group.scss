@@ -3,10 +3,12 @@
   border: none;
   border-top: 1px solid $border-field;
   padding: 30px 0;
+  box-sizing: border-box;
+  display: block;
 
   @include tablet() {
     border-top: none;
-    padding: 50px 0 50px 167px;
+    padding: 50px 0 49px 174px;
   }
 }
 
@@ -15,8 +17,28 @@
   padding-bottom: 33px;
 }
 
+.group--color .group__title {
+  @include desktop() {
+    top: 68px;
+  }
+}
+
 .group--name {
   padding-bottom: 35px;
+  padding-top: 30px;
+
+  @include tablet() {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  @include desktop() {
+    padding-right: 170px;
+  }
+}
+
+.group--name .group__label:not(:first-of-type) {
+  margin-top: 20px;
 }
 
 .group--name .input {
@@ -32,6 +54,10 @@
   @include tablet() {
     padding-top: 50px;
     padding-bottom: 24px;
+  }
+
+  @include desktop() {
+    padding-right: 170px;
   }
 }
 
@@ -51,6 +77,16 @@
 
 .group--email {
   padding-top: 0;
+
+  @include desktop() {
+    padding-right: 170px;
+  }
+}
+
+.group--email .group__title {
+  @include desktop() {
+    top: 22px;
+  }
 }
 
 .group--email .input {
@@ -69,8 +105,10 @@
 
 .group__label {
   font-size: 17px;
-  line-height: 16px;
+  line-height: 18px;
   font-weight: 700;
+  box-sizing: border-box;
+  display: block;
 
   @include tablet() {
     display: flex;
@@ -89,12 +127,13 @@
 
   @include tablet() {
     position: absolute;
-    top: 73px;
-    left: 0;
+    top: 68px;
+    left: -4px;
   }
 
   @include desktop() {
-    left: 47px;
+    top: 75px;
+    left: 57px;
   }
 }
 
@@ -102,6 +141,20 @@
   @include tablet() {
     top: 17px;
   }
+}
+
+.group--more {
+  margin-top: 8px;
+  padding-top: 20px;
+  padding-bottom: 0;
+
+  @include tablet() {
+    padding-top: 41px;
+  }
+}
+
+.group--more .group__title {
+  top: 65px;
 }
 
 .group__area {
@@ -114,6 +167,16 @@
   box-sizing: border-box;
   resize: vertical;
   outline: none;
+  min-height: 142px;
+
+  @include tablet() {
+    font-size: 19px;
+    line-height: 18px;
+  }
+
+  @include desktop() {
+    max-width: 700px;
+  }
 
   &:hover,
   &:focus-visible {
@@ -129,10 +192,26 @@
   @include tablet() {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 24px 0;
+    grid-gap: 24px 24px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   @include desktop() {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 250px 250px 250px;
+    grid-gap: 24px 12px;
+    padding-top: 45px;
+  }
+}
+
+.group--type {
+  @include tablet() {
+    padding-top: 33px;
+  }
+}
+
+.group--type .group__title {
+  @include tablet() {
+    top: 50px;
   }
 }

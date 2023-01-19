@@ -4,8 +4,12 @@
   background-color: $background;
 
   @include tablet() {
-    padding-top: 51px;
+    padding-top: 52px;
     padding-bottom: 58px;
+  }
+
+  @include desktop() {
+    padding-top: 53px;
   }
 }
 
