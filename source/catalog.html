@@ -183,6 +183,35 @@
         </div>
       </div>
     </footer>
+
+    <!-- Модальное окно modal--open -->
+    <div class="modal">
+      <form class="modal__form" action="https://echo.htmlacademy.ru/" method="get">
+        <h2 class="modal__title title title--medium">Добавить в корзину</h2>
+        <span class="modal__text">Выберите размер:</span>
+        <ul class="modal__list list-reset">
+          <li class="modal__item">
+            <label class="modal__label">
+              <input class="modal__input" type="radio" name="size" value="S" checked>
+              <span class="modal__control">S</span>
+            </label>
+          </li>
+          <li class="modal__item">
+            <label class="modal__label">
+              <input class="modal__input" type="radio" name="size" value="M" >
+              <span class="modal__control">M</span>
+            </label>
+          </li>
+          <li class="modal__item">
+            <label class="modal__label">
+              <input class="modal__input" type="radio" name="size" value="L" >
+              <span class="modal__control">L</span>
+            </label>
+          </li>
+        </ul>
+        <button class="modal__button button button--secondary " type="submit">Добавить</button>
+      </form>
+    </div>
   </body>
 
   <script src="./js/script.js"></script>
