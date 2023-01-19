@@ -8,7 +8,11 @@
 
   @include tablet() {
     border-top: none;
-    padding: 50px 0 49px 174px;
+    padding: 50px 0 49px 167px;
+  }
+
+  @include desktop() {
+    padding-left: 174px;
   }
 }
 
@@ -34,16 +38,25 @@
 
   @include desktop() {
     padding-right: 170px;
+    padding-bottom: 45px;
   }
 }
 
 .group--name .group__label:not(:first-of-type) {
   margin-top: 20px;
+
+  @include desktop() {
+    margin-top: 24px;
+  }
 }
 
 .group--name .input {
   @include tablet() {
     margin-left: 24px;
+  }
+
+  @include desktop() {
+    margin-left: 30px;
   }
 }
 
