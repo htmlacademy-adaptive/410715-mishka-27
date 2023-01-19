@@ -15,10 +15,10 @@
   @include desktop() {
     display: grid;
     background-image: url("../img/background-images/wave2-desktop.png");
-    padding-top: 71px;
+    padding-top: 94px;
     padding-bottom: 105px;
     padding-left: 224px;
-    grid-template-columns: auto auto;
+    grid-template-columns: 40% 60%;
   }
 }
 
@@ -29,6 +29,10 @@
   @include tablet() {
     min-height: 81px;
     align-items: center;
+  }
+
+  @include desktop() {
+    padding-top: 46px;
   }
 }
 
@@ -46,8 +50,8 @@
   }
 
   @include desktop() {
-    left: -110px;
-    top: 10px;
+    left: -111px;
+    top: 62px;
   }
 }
 
@@ -60,6 +64,10 @@
     margin-top: 34px;
     padding-right: 39px;
   }
+
+  @include desktop() {
+    margin-top: -29px;
+  }
 }
 
 .contacts__item {
@@ -70,6 +78,10 @@
   @include tablet() {
     font-size: 17px;
     margin-top: 0;
+  }
+
+  @include desktop() {
+    margin-top: 29px;
   }
 }
 
