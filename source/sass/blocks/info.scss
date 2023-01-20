@@ -2,7 +2,7 @@
   position: relative;
   background-image: url("../img/background-images/info-mobile.png");
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center top -17px;
   background-color: $color-gray;
 
   @media (min-resolution: 2dppx) {
@@ -12,7 +12,7 @@
 
   @include tablet() {
     background-image: url("../img/background-images/info-tablet.png");
-    background-position: center bottom;
+    background-position: center bottom 13px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/background-images/info-tablet@2x.png");
@@ -22,7 +22,7 @@
 
   @include desktop() {
     background-image: url("../img/background-images/info-desktop.png");
-    background-position: center bottom 25px;
+    background-position: center bottom 12px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/background-images/info-desktop@2x.png");
@@ -34,7 +34,7 @@
 .info::after {
   @include tablet() {
     position: absolute;
-    bottom: -12px;
+    bottom: -4px;
     left: 0;
     content: " ";
     width: 100%;
@@ -44,7 +44,7 @@
 
   @include desktop {
     height: 34px;
-    bottom: -17px;
+    bottom: -5px;
     background-image: url("../img/background-images/wave-desktop.png");
   }
 }
@@ -53,18 +53,18 @@
   max-width: 260px;
   margin: 0 auto;
   text-align: center;
-  padding-top: 69px;
+  padding-top: 73px;
   padding-bottom: 120px;
 
   @include tablet() {
     max-width: 668px;
-    padding-top: 120px;
+    padding-top: 150px;
     padding-bottom: 372px;
   }
 
   @include desktop() {
     max-width: 700px;
-    padding-top: 158px;
+    padding-top: 157px;
     padding-bottom: 355px;
   }
 }
@@ -88,6 +88,8 @@
   background-color: $background-button-secondary;
 
   @include tablet () {
+    font-size: 20px;
+    line-height: 30px;
     padding: 25px 0 46px 36px;
     margin: 0;
     width: 50%;

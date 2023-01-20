@@ -2,13 +2,19 @@
   display: flex;
   border-top: 1px solid $border-item;
   justify-content: center;
+  align-items: center;
+  font-size: 19px;
+  line-height: 18px;
 
   @include tablet() {
     border: none;
   }
 
   &__link {
+    width: 27px;
+    height: 34px;
     color: $color-aqua;
+    margin-left: 22px;
 
     &:hover,
     &:focus-visible {
@@ -19,8 +25,4 @@
       opacity: 0.3;
     }
   }
-}
-
-.copyright__text {
-  margin-right: 27px;
 }

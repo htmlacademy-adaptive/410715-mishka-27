@@ -2,7 +2,7 @@
   margin-top: 29px;
 
   @include tablet() {
-    margin-top: 13px;
+    margin-top: 0;
   }
 }
 
@@ -14,17 +14,18 @@
 
 .form__footer {
   padding-bottom: 55px;
-  margin-top: 17px;
+  margin-top: 8px;
 
   @include tablet() {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 50px;
+    margin-top: 44px;
   }
 
   @include desktop() {
-    padding-left: 170px;
+    padding: 0 170px 45px;
   }
 }
 
@@ -48,5 +49,6 @@
     order: -1;
     width: auto;
     margin: 0;
+    min-width: 230px;
   }
 }

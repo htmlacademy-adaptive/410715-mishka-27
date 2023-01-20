@@ -3,10 +3,16 @@
   border: none;
   border-top: 1px solid $border-field;
   padding: 30px 0;
+  box-sizing: border-box;
+  display: block;
 
   @include tablet() {
     border-top: none;
-    padding: 50px 0 50px 167px;
+    padding: 50px 0 49px 167px;
+  }
+
+  @include desktop() {
+    padding-left: 174px;
   }
 }
 
@@ -15,17 +21,48 @@
   padding-bottom: 33px;
 }
 
+.group--color .group__title {
+  @include desktop() {
+    top: 68px;
+  }
+}
+
 .group--name {
   padding-bottom: 35px;
+  padding-top: 30px;
+
+  @include tablet() {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  @include desktop() {
+    padding-right: 170px;
+    padding-bottom: 39px;
+  }
+}
+
+.group--name .group__label:not(:first-of-type) {
+  margin-top: 20px;
+
+  @include desktop() {
+    margin-top: 28px;
+  }
 }
 
 .group--name .input {
   @include tablet() {
     margin-left: 24px;
   }
+
+  @include desktop() {
+    margin-left: 30px;
+  }
 }
 
 .group--phone {
+  color: rgba($color-black, 0.2);
+  position: relative;
   padding-top: 0;
   padding-bottom: 35px;
 
@@ -33,24 +70,70 @@
     padding-top: 50px;
     padding-bottom: 24px;
   }
-}
-
-.group--phone .input {
-  background-image: url("../img/about-images/input-phone.svg");
-  background-repeat: no-repeat;
-  background-position: center right 7px;
-
-  @include tablet() {
-    background-position: center right 26px;
-  }
 
   @include desktop() {
-    background-position: center right 8px;
+    padding-right: 170px;
+  }
+
+  &:hover .group__image--phone,
+  &:focus-within {
+    color: rgba($color-aqua, 1);
   }
 }
 
 .group--email {
+  color: rgba($color-black, 0.2);
+  position: relative;
   padding-top: 0;
+
+  @include desktop() {
+    padding-right: 170px;
+  }
+
+  &:hover .group__image--mail,
+  &:focus-within {
+    color: rgba($color-aqua, 1);
+  }
+}
+
+.group__image {
+  &--phone {
+    position: absolute;
+    z-index: 1;
+    top: 12px;
+    right: 5px;
+
+    @include tablet() {
+      top: 63px;
+      right: 24px;
+    }
+
+    @include desktop() {
+      right: 180px;
+    }
+  }
+
+  &--mail {
+    position: absolute;
+    z-index: 1;
+    top: 19px;
+    right: 1px;
+
+    @include tablet() {
+      top: 16px;
+      right: 20px;
+    }
+
+    @include desktop() {
+      right: 177px;
+    }
+  }
+}
+
+.group--email .group__title {
+  @include desktop() {
+    top: 22px;
+  }
 }
 
 .group--email .input {
@@ -69,8 +152,10 @@
 
 .group__label {
   font-size: 17px;
-  line-height: 16px;
+  line-height: 18px;
   font-weight: 700;
+  box-sizing: border-box;
+  display: block;
 
   @include tablet() {
     display: flex;
@@ -89,12 +174,13 @@
 
   @include tablet() {
     position: absolute;
-    top: 73px;
-    left: 0;
+    top: 68px;
+    left: -4px;
   }
 
   @include desktop() {
-    left: 47px;
+    top: 75px;
+    left: 57px;
   }
 }
 
@@ -102,6 +188,20 @@
   @include tablet() {
     top: 17px;
   }
+}
+
+.group--more {
+  margin-top: 8px;
+  padding-top: 20px;
+  padding-bottom: 0;
+
+  @include tablet() {
+    padding-top: 41px;
+  }
+}
+
+.group--more .group__title {
+  top: 65px;
 }
 
 .group__area {
@@ -114,6 +214,16 @@
   box-sizing: border-box;
   resize: vertical;
   outline: none;
+  min-height: 142px;
+
+  @include tablet() {
+    font-size: 19px;
+    line-height: 18px;
+  }
+
+  @include desktop() {
+    max-width: 700px;
+  }
 
   &:hover,
   &:focus-visible {
@@ -129,10 +239,26 @@
   @include tablet() {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 24px 0;
+    grid-gap: 24px 24px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   @include desktop() {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 250px 250px 250px;
+    grid-gap: 24px 12px;
+    padding-top: 45px;
+  }
+}
+
+.group--type {
+  @include tablet() {
+    padding-top: 33px;
+  }
+}
+
+.group--type .group__title {
+  @include tablet() {
+    top: 50px;
   }
 }
