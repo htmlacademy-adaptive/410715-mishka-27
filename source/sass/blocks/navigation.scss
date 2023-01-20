@@ -52,6 +52,7 @@
 
 .navigation__item:focus .navigation__icon {
   color: $color-aqua;
+  opacity: 0.3;
 }
 
 .navigation__toggle {
@@ -142,6 +143,8 @@
 
 .navigation__icon--search,
 .navigation__icon--cart {
+  color: rgba($color-black, 0.2);
+
   @include mobile-only() {
     position: absolute;
     top: 50%;
