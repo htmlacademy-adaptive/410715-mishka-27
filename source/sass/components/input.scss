@@ -9,6 +9,12 @@
   border-bottom: 2px solid $base-color;
   background: transparent;
 
+  @include tablet() {
+    font-size: 19px;
+    padding-top: 12px;
+    padding-bottom: 14px;
+  }
+
   &::placeholder {
     color: $placeholder;
   }

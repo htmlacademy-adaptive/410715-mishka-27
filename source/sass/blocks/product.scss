@@ -16,6 +16,7 @@
 
 .product__item {
   border: 1px solid $border-item-catalog;
+  box-sizing: border-box;
 
   @include mobile-only() {
     &:not(:first-of-type) {

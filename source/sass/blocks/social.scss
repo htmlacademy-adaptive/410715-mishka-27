@@ -1,11 +1,14 @@
 .social {
   display: flex;
-  justify-content: space-between;
-  width: 142px;
+  justify-content: center;
 
   @include desktop() {
     margin-top: 7px;
   }
+}
+
+.social__item:not(:first-child) {
+  margin-left: 31px;
 }
 
 .social__link {

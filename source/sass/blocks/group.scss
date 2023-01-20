@@ -38,7 +38,7 @@
 
   @include desktop() {
     padding-right: 170px;
-    padding-bottom: 45px;
+    padding-bottom: 39px;
   }
 }
 
@@ -46,7 +46,7 @@
   margin-top: 20px;
 
   @include desktop() {
-    margin-top: 24px;
+    margin-top: 28px;
   }
 }
 
@@ -61,6 +61,7 @@
 }
 
 .group--phone {
+  position: relative;
   padding-top: 0;
   padding-bottom: 35px;
 
@@ -72,27 +73,58 @@
   @include desktop() {
     padding-right: 170px;
   }
-}
 
-.group--phone .input {
-  background-image: url("../img/about-images/input-phone.svg");
-  background-repeat: no-repeat;
-  background-position: center right 7px;
-
-  @include tablet() {
-    background-position: center right 26px;
-  }
-
-  @include desktop() {
-    background-position: center right 8px;
+  &:hover .group__image--phone,
+  &:focus-within {
+    color: rgba($color-aqua, 1);
   }
 }
 
 .group--email {
+  position: relative;
   padding-top: 0;
 
   @include desktop() {
     padding-right: 170px;
+  }
+
+  &:hover .group__image--mail,
+  &:focus-within {
+    color: rgba($color-aqua, 1);
+  }
+}
+
+.group__image {
+  &--phone {
+    position: absolute;
+    z-index: 1;
+    top: 12px;
+    right: 5px;
+
+    @include tablet() {
+      top: 63px;
+      right: 24px;
+    }
+
+    @include desktop() {
+      right: 180px;
+    }
+  }
+
+  &--mail {
+    position: absolute;
+    z-index: 1;
+    top: 19px;
+    right: 1px;
+
+    @include tablet() {
+      top: 16px;
+      right: 20px;
+    }
+
+    @include desktop() {
+      right: 177px;
+    }
   }
 }
 

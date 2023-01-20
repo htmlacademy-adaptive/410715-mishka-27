@@ -16,6 +16,8 @@
 
   @include desktop() {
     background-image: url("../img/background-images/wave2-desktop.png");
+    background-size: 1050px auto;
+    background-repeat: no-repeat;
     grid-template-columns: auto 305px auto;
     grid-template-areas: "pst pt pim" "pst pd pim" "pst pl pim" "pst pp pim";
     padding-top: 70px;
