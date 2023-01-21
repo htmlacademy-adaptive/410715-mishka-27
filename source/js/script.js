@@ -15,7 +15,6 @@ if(mapImg){
   map.classList.remove("visually-hidden");
 }
 
-
 buttonMenu.onclick = () => {
   buttonMenu.classList.toggle("header__toggle--closed");
   dropMenu.classList.toggle("navigation--open");
