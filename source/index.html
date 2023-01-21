@@ -10,7 +10,7 @@
     <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin>
   </head>
-  <body class="body">
+  <body>
     <!-- Шапка сайта -->
     <header class="header">
       <a href="#" class="header__logo">
@@ -20,8 +20,8 @@
           <img src="img/logo/logo-mobile.png" alt="Магазин «Мишка»">
         </picture>
       </a>
-      <!-- При открытом меню, добавляется стиль navigation__button--close -->
-      <button class="navigation__toggle button navigation__toggle--closed" type="button"><span class="visually-hidden">Открыть\закрыть меню</span></button>
+      <!-- При открытом меню, добавляется стиль header__button--close -->
+      <button class="header__toggle button header__toggle--closed" type="button"><span class="visually-hidden">Открыть\закрыть меню</span></button>
       <!-- При клике на кнопку, добавляется стиль navigation--open -->
       <nav class="navigation navigation--open">
         <ul class="navigation__list navigation__list--primary list-reset">
@@ -94,7 +94,10 @@
         </dl>
         <picture class="promo__image">
           <source media="(min-width: 1150px)" srcset="img/products/promo-desktop.jpg 1x, img/products/promo-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/products/promo-tablet@2x.jpg 1x, img/products/promo-tablet@2x.jpg 2x">
+          <source media="(min-width: 1150px)" srcset="img/products/promo-desktop.webp 1x, img/products/promo-desktop@2x.webp 2x" type="image/webp">
+          <source media="(min-width: 768px)" srcset="img/products/promo-tablet.jpg 1x, img/products/promo-tablet@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/products/promo-tablet.webp 1x, img/products/promo-tablet@2x.webp 2x" type="image/webp">
+          <source media="(min-width: 320px)" srcset="img/products/promo-mobile.webp 1x, img/products/promo-mobile@2x.webp 2x" type="image/webp">
           <img class="promo__image-item" src="./img/products/promo-mobile.jpg" srcset="img/products/promo-mobile@2x.jpg 2x" width="260" height="315" alt="Рекомендованный товар">
         </picture>
         <div class="promo__price">
@@ -172,8 +175,15 @@
           </div>
         </dl>
         <div class="contacts__map">
-          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A80b7096a6ec710fb067c1d111da2ab900e06402d5b87f074d78463248ce53d87&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
-        </div>
+          <picture class="contacts__image">
+            <source media="(min-width: 1150px)" srcset="img/contacts/map-desktop.jpg 1x, img/contacts/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 1150px)" srcset="img/contacts/map-desktop.webp 1x, img/contacts/map-desktop@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 768px)" srcset="img/contacts/map-tablet.jpg 1x, img/contacts/map-tablet@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/contacts/map-tablet.webp 1x, img/contacts/map-tablet@2x.webp 2x" type="image/webp">
+            <img class="contacts__map-img" src="img/contacts/map-mobile.jpg" srcset="img/contacts/map-mobile@2x.jpg 2x" width="320" height="457" alt="Карта">
+          </picture>
+          <iframe class="visually-hidden contacts__map-item"  src="https://yandex.ru/map-widget/v1/?um=constructor%3A99d6e394afd9c5ec308c29322e10facefc46396999d6ab763a992094e4de1460&amp;source=constructor"></iframe>
+         </div>
         <a class="contacts__button button button--primary" href="#">Напишите нам</a>
       </section>
     </main>
@@ -245,7 +255,7 @@
         <button class="modal__button button button--secondary " type="submit">Добавить</button>
       </form>
     </div>
-  </body>
 
-  <script src="./js/script.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
 </html>
