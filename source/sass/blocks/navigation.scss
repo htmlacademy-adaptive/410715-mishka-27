@@ -25,6 +25,13 @@
   @include desktop() {
     grid-template-areas: "primary secondary" "extra text";
   }
+
+  &--no-js {
+    @include mobile-only() {
+      display: block;
+      width: 100%;
+    }
+  }
 }
 
 .navigation__item {

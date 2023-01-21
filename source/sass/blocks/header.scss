@@ -12,6 +12,17 @@
   @include desktop() {
     justify-content: center;
   }
+
+  &--no-js {
+    @include mobile-only() {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .header__toggle {
+      top: 39px;
+    }
+  }
 }
 
 .header__logo {
