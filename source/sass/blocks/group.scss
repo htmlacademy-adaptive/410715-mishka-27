@@ -97,9 +97,10 @@
 }
 
 .group__image {
+  position: absolute;
+  z-index: 1;
+
   &--phone {
-    position: absolute;
-    z-index: 1;
     top: 12px;
     right: 5px;
 
@@ -114,8 +115,6 @@
   }
 
   &--mail {
-    position: absolute;
-    z-index: 1;
     top: 19px;
     right: 1px;
 

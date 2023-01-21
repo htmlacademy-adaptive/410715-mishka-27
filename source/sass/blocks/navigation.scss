@@ -25,6 +25,13 @@
   @include desktop() {
     grid-template-areas: "primary secondary" "extra text";
   }
+
+  &--no-js {
+    @include mobile-only() {
+      display: block;
+      width: 100%;
+    }
+  }
 }
 
 .navigation__item {
@@ -55,22 +62,6 @@
   opacity: 0.3;
 }
 
-.navigation__toggle {
-  width: 21px;
-  height: 20px;
-  background-image: url("../img/button-images/menu-open.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  position: absolute;
-  top: 49%;
-  transform: translateY(-50%);
-  right: 31px;
-
-  @include tablet() {
-    display: none;
-  }
-}
-
 .navigation--open {
   @include mobile-only() {
     display: block;
@@ -81,10 +72,6 @@
     right: 0;
     background-color: $color-white;
   }
-}
-
-.navigation__toggle--closed {
-  background-image: url("../../img/button-images/menu-close.png");
 }
 
 .navigation__list {

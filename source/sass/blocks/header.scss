@@ -12,6 +12,17 @@
   @include desktop() {
     justify-content: center;
   }
+
+  &--no-js {
+    @include mobile-only() {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .header__toggle {
+      top: 39px;
+    }
+  }
 }
 
 .header__logo {
@@ -37,4 +48,24 @@
   &:focus {
     opacity: 0.3;
   }
+}
+
+.header__toggle {
+  width: 21px;
+  height: 20px;
+  background-image: url("../img/button-images/menu-open.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  top: 49%;
+  transform: translateY(-50%);
+  right: 31px;
+
+  @include tablet() {
+    display: none;
+  }
+}
+
+.header__toggle--closed {
+  background-image: url("../../img/button-images/menu-close.png");
 }

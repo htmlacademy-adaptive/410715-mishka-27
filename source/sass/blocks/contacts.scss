@@ -129,6 +129,13 @@
   }
 }
 
+.contacts__map-item,
+.contacts__map-img {
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+
 .contacts__button {
   margin-top: 38px;
   width: 100%;

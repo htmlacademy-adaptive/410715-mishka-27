@@ -61,11 +61,11 @@ const copyImages = () => {
 // WebP
 
 const createWebp = () => {
-  return gulp.src('source/img/**/*.{png,jpg}')
-  .pipe(squoosh({
-    webp: {}
-  }))
-  .pipe(gulp.dest('build/img'))
+return gulp.src('source/img/**/*.{png,jpg}')
+.pipe(squoosh({
+webp: {}
+}))
+.pipe(gulp.dest('build/img'))
 }
 
 // SVG
@@ -156,13 +156,14 @@ export default gulp.series(
   copy,
   copyImages,
   gulp.parallel(
-    styles,
-    html,
-    scripts,
-    svg,
-    sprite
+  styles,
+  html,
+  scripts,
+  svg,
+  sprite,
+  createWebp
   ),
   gulp.series(
-    server,
-    watcher
-));
+  server,
+  watcher
+  ));
